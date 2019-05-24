@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	
+	<dubbo:provider timeout="6000" retries="0" />
+
+	<dubbo:application name="${local.name}" />
+	<dubbo:registry address="${regist.fms.data.address}"  file="${regist.fms.data.file}"/>
+	<dubbo:protocol name="dubbo" port="${local.port}" />
+	
+
+<dubbo:service ref="fmsServiceCodeService"
+    	interface="cn.emay.eucp.data.service.fms.FmsServiceCodeService" timeout="60000"/>
+    	
+    	<dubbo:service ref="fmsUserServiceCodeAssignService"
+    	interface="cn.emay.eucp.data.service.fms.FmsUserServiceCodeAssignService" timeout="60000"/>  
+		<dubbo:service ref="fmsServicecodeConsumptionMonthService"
+    	interface="cn.emay.eucp.data.service.fms.FmsServicecodeConsumptionMonthService" timeout="60000"/>
+    	
+    	<dubbo:service ref="fmsServiceCodeParamService"
+    	interface="cn.emay.eucp.data.service.fms.FmsServiceCodeParamService" timeout="60000"/>
+    	<dubbo:service ref="fmsBatchService"
+    	interface="cn.emay.eucp.data.service.fms.FmsBatchService" timeout="60000"/>
+    	<dubbo:service ref="fmsMessageService"
+    	interface="cn.emay.eucp.data.service.fms.FmsMessageService" timeout="60000"/>
+    	<dubbo:service ref="fmsTemplateServiceCodeAssignService"
+    	interface="cn.emay.eucp.data.service.fms.FmsTemplateServiceCodeAssignService" timeout="60000"/>
+    	<dubbo:service ref="fmsBlackDictionaryService"
+    	interface="cn.emay.eucp.data.service.fms.FmsBlackDictionaryService" timeout="60000"/>
+    	<dubbo:service ref="fmsBlacklistService"
+    	interface="cn.emay.eucp.data.service.fms.FmsBlacklistService" timeout="60000"/>
+    	<dubbo:service ref="fmsBusinessTypeService"
+    	interface="cn.emay.eucp.data.service.fms.FmsBusinessTypeService" timeout="60000"/>
+    	<dubbo:service ref="fmsAccountService"
+    	interface="cn.emay.eucp.data.service.fms.FmsAccountService" timeout="60000"/>
+    	<dubbo:service ref="fmsChannelService"
+    	interface="cn.emay.eucp.data.service.fms.FmsChannelService" timeout="60000"/>
+    	<dubbo:service ref="fmsChannelInfoService"
+    	interface="cn.emay.eucp.data.service.fms.FmsChannelInfoService" timeout="60000"/>
+    	<dubbo:service ref="fmsTemplateChannelReportService"
+    	interface="cn.emay.eucp.data.service.fms.FmsTemplateChannelReportService" timeout="60000"/>
+    	<dubbo:service ref="fmsAccountDetailService"
+    	interface="cn.emay.eucp.data.service.fms.FmsAccountDetailService" timeout="60000"/>
+    	<dubbo:service ref="fmsServiceCodeChannelService"
+    	interface="cn.emay.eucp.data.service.fms.FmsServiceCodeChannelService" timeout="60000"/>
+    	<dubbo:service ref="fmsServicecodeConsumptionYearService"
+    	interface="cn.emay.eucp.data.service.fms.FmsServicecodeConsumptionYearService" timeout="60000"/>
+    	<dubbo:service ref="fmsServicecodeConsumptionDayService"
+    	interface="cn.emay.eucp.data.service.fms.FmsServicecodeConsumptionDayService" timeout="60000"/>
+    	<dubbo:service ref="fmsEnterpriseContentTypeYearService"
+    	interface="cn.emay.eucp.data.service.fms.FmsEnterpriseContentTypeYearService" timeout="60000"/>
+    	<dubbo:service ref="fmsEnterpriseContentTypeMonthService"
+    	interface="cn.emay.eucp.data.service.fms.FmsEnterpriseContentTypeMonthService" timeout="60000"/>
+    	<dubbo:service ref="fmsEnterpriseContentTypeDayService"
+    	interface="cn.emay.eucp.data.service.fms.FmsEnterpriseContentTypeDayService" timeout="60000"/>
+    	<dubbo:service ref="fmsTemplateService"
+    	interface="cn.emay.eucp.data.service.fms.FmsTemplateService" timeout="60000"/>
+    	<dubbo:service ref="batchInsertEntityService"
+    	interface="cn.emay.eucp.data.service.fms.BatchInsertEntityService" timeout="60000"/>
+    	
+</beans>

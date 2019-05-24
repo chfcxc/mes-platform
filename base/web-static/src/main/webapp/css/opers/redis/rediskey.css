@@ -1,0 +1,24 @@
+.minHH240 {
+    height: 172px;
+}
+.item .item-label {
+    width: 112px;
+}
+.blue {
+   background: -moz-linear-gradient( top, #0183e1, #629fe2);
+	background: -ms-linear-gradient( top, #0183e1, #629fe2);
+	background: -o-linear-gradient( top, #0183e1, #629fe2);
+	background: -webkit-linear-gradient( top, #0183e1, #629fe2);
+    color: #fff;
+    margin-left: 10px;
+}
+#userNames {
+    height: 100px;
+    resize: none;
+    width: 422px;
+    border: none;
+    margin:10px 0 0px 90px;
+}
+#keyCodeInput,#keyNameInput{
+	border:none;
+}

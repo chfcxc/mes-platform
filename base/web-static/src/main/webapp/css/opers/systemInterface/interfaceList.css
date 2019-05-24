@@ -1,0 +1,21 @@
+.basebox{width:500px; margin:30px auto; }
+.basebox .item select{width:212px;}
+.basebox .item .item-label {  width: 100px;  text-align:right; }
+.basebox .item {margin-left:64px;}
+#baseForm{margin-left:44px;}
+#baseForm input{width:140px;}
+#baseForm select{width:152px;}
+
+#interfaceForm .item .item-label,#interfaceModifyForm .item .item-label{
+    width: 160px;
+}
+#interfaceForm .item-text ,#interfaceModifyForm .item-text {
+    width: 370px;
+}
+
+#interfaceForm .item,#interfaceModifyForm .item{
+    margin-left: 18%;
+}
+#interfaceForm .item label.error,#interfaceModifyForm .item label.error, #interfaceForm .item label.valid,#interfaceModifyForm .item label.valid, #interfaceForm .item label.tip,#interfaceModifyForm  .item label.tip {
+    left: 166px;
+}

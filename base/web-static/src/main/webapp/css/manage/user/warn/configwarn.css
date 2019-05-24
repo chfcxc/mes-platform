@@ -1,0 +1,31 @@
+.configbox{margin:10px; padding-bottom:12px; border: 1px solid #e6e6e6;  border-radius: 5px; overflow: hidden; }
+.title{ background: -moz-linear-gradient(center top , #f9fcfe, #def0fb); background: -webkit-linear-gradient(top , #f9fcfe, #def0fb);
+   height:40px; line-height:40px;width:100%; position:relative;}
+.title h2{font-weight:normal; font-size:14px;text-indent:1em;}
+.formBox{width:86%; padding:10px; position:relative;}
+.tipFoot{position:absolute;right:-120px;top:0px;}
+.configbox .item-label{width:100px;}
+.w600{width:500px;}
+.h66{height:66px;}
+.imgs{background:url("../../../img/adduser.png")no-repeat 0 0; }
+.imgs:hover{cursor:pointer;}
+.remave{background:url("../../../img/remave.png")no-repeat 0 0;}
+.remave,.imgs{width:20px;height:20px;display:inline-block;margin-top:8px;margin-left:-6px;}
+.remave{margin-left:2px;}
+.item-label{ width:120px !important;float: left;font-size: 14px;text-align: right;}
+.configbox .item-text{width:100px ;}
+.configbox .itemnum{width:180px !important;}
+.heit{margin-left:-28px;}
+.useritem{margin-top:4px;margin-left:-48px;margin-right:10px;}
+.warnp{margin-left:-48px;}
+.onOff{ transition: all 0.3s linear 0s;height:20px; width:34px; border:1px solid #5aa1e4;   position:absolute; top:8px; right:20px;border-radius:16px;background:#69b0f3;}
+.onOff i{transition: all 0.3s linear 0s;height:18px; width:20px;background:#fff; border:1px solid #ccc; border-radius:12px; position:absolute; top:0px; right:0px;}
+.role-gray{background:none;border:1px solid #ccc;}
+.role-gray i{right:12px}
+.only{margin-left: -8px; margin-right: 8px;}
+ .remaves{width:20px;height:20px;background:url("../../../img/remave.png")no-repeat;display:inline-block;margin-left:-6px;} 
+.admo{margin:0% 2% 2% 0; }
+.admo{width:100px;}
+#waringfre-error,#receiver-error{margin-left:-42px !important;}
+#adduser{height:auto;}
+.heit{height:78px;margin-left:-28px;}

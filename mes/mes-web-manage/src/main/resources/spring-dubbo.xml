@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       			    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://code.alibabatech.com/schema/dubbo
+	                    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<dubbo:consumer registry="fmsRegistry" timeout="6000" retries="0" />
+
+	<dubbo:application name="${local.name}" />
+	<dubbo:registry id="baseRegistry" address="${regist.base.address}" file="${regist.base.file}" />
+	<dubbo:registry id="fmsRegistry" address="${regist.fms.address}" file="${regist.fms.file}" />
+
+	<!-- base-data-service dubbo reference -->
+	
+	<dubbo:reference id="passportService" interface="cn.emay.eucp.data.service.system.PassportService" registry="baseRegistry" />
+	<dubbo:reference id="userService" interface="cn.emay.eucp.data.service.system.UserService" registry="baseRegistry" />
+	<dubbo:reference id="enterpriseService" interface="cn.emay.eucp.data.service.system.EnterpriseService" registry="baseRegistry" />
+	<dubbo:reference id="enterpriseAuthService" interface="cn.emay.eucp.data.service.system.EnterpriseAuthService" registry="baseRegistry" />
+	<dubbo:reference id="manageUserOperLogService" interface="cn.emay.eucp.data.service.system.ManageUserOperLogService" registry="baseRegistry" />
+	<dubbo:reference id="exportService" interface="cn.emay.eucp.data.service.system.ExportService" registry="baseRegistry"/>
+	<dubbo:reference id="baseExcelReaderService" interface="cn.emay.eucp.data.service.system.ExcelReaderService" registry="baseRegistry" />
+	<dubbo:reference id="userRoleAssignService" interface="cn.emay.eucp.data.service.system.UserRoleAssignService" registry="baseRegistry" />
+	<dubbo:reference id="roleService" interface="cn.emay.eucp.data.service.system.RoleService" registry="baseRegistry" />
+	<dubbo:reference id="authInterceptorService" interface="cn.emay.eucp.data.service.system.AuthInterceptorService" timeout="60000" registry="baseRegistry"/>
+	<dubbo:reference id="fmsServiceCodeService" interface="cn.emay.eucp.data.service.fms.FmsServiceCodeService"  />
+	<dubbo:reference id="fmsUserServiceCodeAssignService" interface="cn.emay.eucp.data.service.fms.FmsUserServiceCodeAssignService"  />
+	<dubbo:reference id="fmsServicecodeConsumptionMonthService" interface="cn.emay.eucp.data.service.fms.FmsServicecodeConsumptionMonthService"  />
+	<dubbo:reference id="fmsServiceCodeParamService" interface="cn.emay.eucp.data.service.fms.FmsServiceCodeParamService"  />
+	<dubbo:reference id="fmsTemplateServiceCodeAssignService" interface="cn.emay.eucp.data.service.fms.FmsTemplateServiceCodeAssignService"  />
+	<dubbo:reference id="fmsMessageService" interface="cn.emay.eucp.data.service.fms.FmsMessageService"  />
+	<dubbo:reference id="fmsBatchService" interface="cn.emay.eucp.data.service.fms.FmsBatchService"  />
+	<dubbo:reference id="fmsBlackDictionaryService" interface="cn.emay.eucp.data.service.fms.FmsBlackDictionaryService"  />
+	<dubbo:reference id="fmsBlacklistService" interface="cn.emay.eucp.data.service.fms.FmsBlacklistService"  />
+	<dubbo:reference id="fmsBusinessTypeService" interface="cn.emay.eucp.data.service.fms.FmsBusinessTypeService"  />
+	<dubbo:reference id="fmsAccountService" interface="cn.emay.eucp.data.service.fms.FmsAccountService"  />
+	<dubbo:reference id="fmsAccountDetailService" interface="cn.emay.eucp.data.service.fms.FmsAccountDetailService"  />
+	<dubbo:reference id="fmsChannelInfoService" interface="cn.emay.eucp.data.service.fms.FmsChannelInfoService"  />
+	<dubbo:reference id="fmsChannelService" interface="cn.emay.eucp.data.service.fms.FmsChannelService"  />
+	<dubbo:reference id="fmsTemplateChannelReportService" interface="cn.emay.eucp.data.service.fms.FmsTemplateChannelReportService"  />
+	<dubbo:reference id="fmsServiceCodeChannelService" interface="cn.emay.eucp.data.service.fms.FmsServiceCodeChannelService"  />
+	<dubbo:reference id="fmsServicecodeConsumptionDayService" interface="cn.emay.eucp.data.service.fms.FmsServicecodeConsumptionDayService"  />
+	<dubbo:reference id="fmsServicecodeConsumptionYearService" interface="cn.emay.eucp.data.service.fms.FmsServicecodeConsumptionYearService"  />
+	<dubbo:reference id="fmsEnterpriseContentTypeYearService" interface="cn.emay.eucp.data.service.fms.FmsEnterpriseContentTypeYearService"  />
+	<dubbo:reference id="fmsEnterpriseContentTypeMonthService" interface="cn.emay.eucp.data.service.fms.FmsEnterpriseContentTypeMonthService"  />
+	<dubbo:reference id="fmsEnterpriseContentTypeDayService" interface="cn.emay.eucp.data.service.fms.FmsEnterpriseContentTypeDayService"  />
+	<dubbo:reference id="batchInsertEntityService" interface="cn.emay.eucp.data.service.fms.BatchInsertEntityService"  />
+	
+</beans> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsBusinessType" table="fms_business_type">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="name" type="string" />
+		<property name="parentId" column="parent_id" type="long" />
+		<property name="level" column="level" type="int" />
+		<property name="fullPath" column="full_path" type="string" />
+		<property name="userId" column="user_id" type="long" />
+		<property name="saveType" column="save_type" type="int" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

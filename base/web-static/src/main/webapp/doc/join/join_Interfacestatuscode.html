@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>亿美软通</title>
+        <link type="image/x-icon" rel="shortcut icon" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="bookmark" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/documentCenter.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="topbar">
+			<div class="topcon">
+				<div class="logo">   <a href="http://www.emay.cn/"></a> </div>
+				<div class="top_list">
+					<div class="listDiv">
+						<h3 class="bor_L"><a href="http://www.emay.cn/" target="_blank">官网首页</a></h3>
+					</div>
+	                <div class="listDiv">
+						<h3><a href="http://www.emay.cn/article283.html" target="_blank">立即申请</a></h3>
+					</div>
+					<div class="listDiv">
+						<h3><a href="http://mtn.b2m.cn:8080/static/doc/index.html" target="_blank">文档中心</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="dc_banner"><img src="../img/dc_img/dc_banner.png"/></div>
+        <!--文档中心-->
+        <div class="container">
+        	<div class="documentCenter">
+               <div class="dc_left fl">
+               		<div class='location_wrapper'>
+               			<img src="../img/dc_img/location.png">当前位置：<a href="../index.html">文档中心</a> > 金融营销
+               		</div>							
+                    <h2><a href="../join/join_send.html"><span></span>金融营销接口</a></h2>
+                    <ul style="display:none">
+                   	     <li><a href="../join/join_send.html">金融营销接口</a></li>
+                         <li ><a href="../join/join_getstatus.html">主动获取状态报告接口</a></li>
+                         <li><a href="../join/join_balance.html">余额获取接口</a></li>
+                    </ul>
+                    <h2><a href="../join/join_statuscode.html"><span></span>状态报告表</a></h2>
+                    <h2 class="active"><a href="../join/join_Interfacestatuscode.html"><span></span>接口状态码表</a></h2>
+                    <div class="hotline">
+                        <h4 class="titL">7x24小时客服热线 ></h4>
+                        <div class="ym_phone">
+                            <div><img src="../img/phoneC_08.png" alt="" />售前：<span>400-810-7255</span></div>
+                            <div><img src="../img/phoneC_08.png" alt="" />售后：<span>400-779-7255</span></div>
+                        </div>
+                    </div>
+               </div>
+               <div class="dc_right fr">
+                <div class="headWrap">
+                    <h2>状态报告状态码表</h2>        
+                </div>
+                <div class="secondMethod">
+                    <div class="secondMethodBox">
+                           <table  border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th width="410">code</th>
+                                    <th width="410">message</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SUCCESS</td>
+                                    <td>提交成功</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_APPID</td>
+                                    <td>AppId不存在</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_PARAMS</td>
+                                    <td>请求参数错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_CLIENT_IP</td>
+                                    <td>不识别的Ip</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_TIMESTAMP</td>
+                                    <td>时间戳错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_SIGN</td>
+                                    <td>签名错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_MOBILE_EMPTY</td>
+                                    <td>手机号为空</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_MOBILE_NUMBER</td>
+                                    <td>号码数量过多</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_MOBILE_ERROR</td>
+                                    <td>手机号码错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_CONTENT_EMPTY</td>
+                                    <td>语音内容为空</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_LONG_CONTENT</td>
+                                    <td>语音内容过长</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_TRIGGERCONDITIONS</td>
+                                    <td>触发条件错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_TIMINGTIME</td>
+                                    <td>发送短信定时时间格式错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_KEYCONTENT</td>
+                                    <td>按键内容必须为0-9位数字</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_CONNECTTIME</td>
+                                    <td>连通时间在0-60秒内</td>                                  
+                                </tr>
+                                <tr>
+                                    <td>ERROR_ISACOUSTICSIGN</td>
+                                    <td>留言标识错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_ISINTERACTIVE</td>
+                                    <td>互动标识错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_CUSTOM_JOIN_ID</td>
+                                    <td>自定义ID错误</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_NEEDMORE_BLANCE</td>
+                                    <td>余额不足</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>ERROR_CUSTOM_JOIN_ID_NUMBER</td>
+                                    <td>自定义ID数量错误</td>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>     	
+           </div>
+     </div>
+ </div>
+ <div class="widget" id="widget"> <a href="javascript:void(0);">TOP</a> </div>
+<!--footer-->
+ <div class="footer">
+      <p class="footerp">北京亿美软通科技有限公司 <span>京ICP备05069632号-1</span><img src="../img/mary_11.png" alt="" /><span>京公网安备11010502031242号</span></p>
+ </div>
+ <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" src="../js/jquery.liMarquee.js"></script>
+ <script type="text/javascript" src="../js/scroll.js"></script>
+ <script type="text/javascript" src="../js/index.js"></script> 
+ <script type="text/javascript" src="../js/documentcenter.js"></script>
+	
+		<style>
+.hoverS{
+	background:#0557bd !important;
+}
+.hoverS a{
+	color:#fff !important;
+}
+</style>
+<script type="text/javascript">
+   $(document).ready(function(){
+    var $liT=$('.tit_list li');
+		$liT.hover(function(){
+		 $(this).addClass('hoverS');
+		},function(){
+		 $(this).removeClass('hoverS');
+		});
+    $('.tit_list2 li a,.tit_list1 li a').hover(function(){
+     $(this).addClass('contentC');
+     $(this).siblings('em').addClass('contentbg');
+    },function(){
+     $(this).removeClass('contentC');
+     $(this).siblings('em').removeClass('contentbg');
+    });
+    
+    /*友情链接区*/
+    $(".fri_link").liMarquee({direction:'up'});
+   });
+  </script> <script type="text/javascript">
+   var shareUrl = "";
+   var shareTitle = "分享标题";
+   shareUrl="http://"+window.location.host;
+   function weixin(url){
+ 
+    var shareUrl1=shareUrl+url;
+    window.open("http://www.jiathis.com/send/?webid=weixin&url=" + shareUrl1 + "&title=" + shareTitle);
+    
+    }
+    
+    function tqq(url){
+
+    var shareUrl2=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tqq&url=" + shareUrl2 + "&title=" + shareTitle);
+     
+    }
+    
+    function qzone(url){
+ 
+    var shareUrl3=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=qzone&url=" + shareUrl3 + "&title=" + shareTitle);
+     
+    }
+    
+    function tsina(url){
+  
+    var shareUrl4=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tsina&url=" + shareUrl4 + "&title=" + shareTitle);
+     
+    }
+    
+   
+  </script>
+  <script type="text/javascript" src="../js/Live800.js"></script>
+ 
+</body>
+</html>

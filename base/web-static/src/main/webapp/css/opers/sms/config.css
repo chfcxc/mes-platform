@@ -1,0 +1,26 @@
+ .item .item-label{
+	width:108px;
+}
+.item label.error, .item label.valid, .item label.tip{
+	left:100px;
+}
+#type,#appId{
+	width:210px;
+	height:32px;
+}
+.w400 {
+    height: 120px;
+}
+#description,#configContent{
+    height: 100px;
+    resize: none;
+    width: 422px;
+     overflow-y: scroll;
+}
+#configContent-error{
+	top:106px;
+}
+.configValBox{
+	display:none;
+}
+

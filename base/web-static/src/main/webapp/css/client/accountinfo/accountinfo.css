@@ -1,0 +1,11 @@
+.personalInformation{width:100%;}
+.personalInformation h2{height:40px; background:#fcfcfc; border-bottom:1px solid #d7d7d7; font-weight:none;font-size:18px;
+ line-height:50px; text-indent:1em;}
+ .ulBox{width:60%;margin:0 auto; border:none;margin-top:20px; padding:40px;}
+.ulBox li{padding:10px;}
+.ulBox li label{width:310px;display:inline-block;text-align:right; margin-right:10px;font-size:16px;}
+.ulBox span{display:inline-block; padding:0px 10px;font-size:16px;} 
+.ulBox input[type="button"]{background:none;border:none; color:#007aff;font-size:16px;} 
+.changepw_box{border:none;width:600px;}
+.changepw_box .item-label{width:120px;}
+#oldPassWord-error,#newpass-error,#affirm-error{left: 124px;}

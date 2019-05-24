@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>亿美软通</title>
+        <link type="image/x-icon" rel="shortcut icon" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="bookmark" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/documentCenter.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="topbar">
+			<div class="topcon">
+				<div class="logo">   <a href="http://www.emay.cn/"></a> </div>
+				<div class="top_list">
+					<div class="listDiv">
+						<h3 class="bor_L"><a href="http://www.emay.cn/" target="_blank">官网首页</a></h3>
+					</div>
+	                <div class="listDiv">
+						<h3><a href="http://www.emay.cn/article283.html" target="_blank">立即申请</a></h3>
+					</div>
+					<div class="listDiv">
+						<h3><a href="http://mtn.b2m.cn:8080/static/doc/index.html" target="_blank">文档中心</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="dc_banner"><img src="../img/dc_img/dc_banner.png"/></div>
+        <!--文档中心-->
+        <div class="container">
+        	<div class="documentCenter">
+               <div class="dc_left fl">
+               		<div class='location_wrapper'>
+               			<img src="../img/dc_img/location.png">当前位置：<a href="../index.html">文档中心</a> > 流量
+               		</div>							
+                    <h2 class="active"><a href="../flow/flow_order.html"><span></span>流量接口</a></h2>
+                    <ul style="display:block">
+                   	     <li><a href="../flow/flow_order.html">提交流量充值订单</a></li>
+                         <li><a href="../flow/flow_result.html">充值结果回调接口</a></li>
+                         <li class="liactive"><a href="../flow/flow_query.html">客户订单状态查询接口</a></li>
+                         <li><a href="../flow/flow_balance.html">客户余额查询接口</a></li>
+                    </ul>
+                    <h2><a href="../flow/flow_statuscode.html"><span></span>提交错误码</a></h2>
+                    <h2><a href="../flow/flow_interfacestatusreport.html"><span></span>状态报告响应码</a></h2>
+                    <h2><a href="../flow/flow_download.html"><span></span>DEMO及文档下载</a></h2> 
+                    <div class="hotline">
+                        <h4 class="titL">7x24小时客服热线 ></h4>
+                        <div class="ym_phone">
+                            <div><img src="../img/phoneC_08.png" alt="" />售前：<span>400-810-7255</span></div>
+                            <div><img src="../img/phoneC_08.png" alt="" />售后：<span>400-779-7255</span></div>
+                        </div>
+                    </div>
+               </div>
+               <div class="dc_right fr">
+                    <div class="headWrap">
+                    	<h2>客户订单状态查询接口</h2>                 
+                    </div> 
+                    <div class="secondWrap">
+                    	<h2>功能</h2> 
+                        <div class="secondcontent">
+                        	<p>客户查询已提交过的订单的状态</p>
+                        </div>    
+                    </div>
+                    <div class="secondMethod">
+                        <h4>调用方向</h4>
+                        <div class="secondMethodBox">
+                       		<p>亿美软通平台 >>客户服务端</p>
+                        </div>
+                    </div>
+                     <div class="secondMethod">
+                        <h4>地址</h4>
+                        <div class="secondMethodBox">
+                       		<p>http://ip:port/interface/query</p>
+                        </div>
+                    </div>
+                     <div class="secondMethod">
+                        <h4>结果</h4>
+                        <div class="secondMethodBox">
+                       		<p>json 格式</p>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>HTTP METHOD</h4>
+                        <div class="secondMethodBox">
+                       		<p>POST</p>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>参数</h4>
+                        <div class="secondMethodBox">
+                       		<table  border="0" cellspacing="0" cellpadding="0">
+                            	<thead>
+                                	<tr>
+                                		<th width="110">参数</th>
+                                        <th width="110">类型</th>
+                                        <th width="110">是否必填</th>
+                                        <th width="490">描述</th>
+                                	</tr>
+                                </thead>
+                            	<tbody>
+									<tr><td>appId</td><td>String</td><td>是</td><td>我方唯一标识</td></tr>
+									<tr><td>sign</td><td>String</td><td>是</td><td>32位Md5签名方式，token为我司提供密钥；<br/> 
+									<span class="linkSpan">sign = md5(appId=appId&taskNo=taskNo&clientTaskNo=clientTaskNo+token)</span></td></tr>
+									<tr><td>clientTaskNo</td><td>String</td><td>否</td><td>由客户产生的此订单编号 </td></tr>
+									<tr><td>taskNo</td><td>String</td><td>是</td><td>我司订单号</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>示例</h4>
+                        <div class="secondMethodBox">
+                        	<p class="linkp">appId=xx&taskNo=xx&clientTaskNo=xx&sign=xx</p>
+                        </div>
+                    </div>
+                    <div class="secondWrap">
+                    	<h2>响应</h2> 
+                        <div class="secondcontent">
+                        	<p>响应数据格式为Json</p>
+                        </div>    
+                    </div>
+                    <div class="secondMethod">
+                        <h4>参数</h4>
+                        <div class="secondMethodBox">
+                       		<table  border="0" cellspacing="0" cellpadding="0">
+                            	<thead>
+                                	<tr>
+                                		<th width="110">参数</th>
+                                        <th width="110">类型</th>
+                                        <th width="600">描述</th>
+                                	</tr>
+                                </thead>
+                            	<tbody>                               	
+<tr><td>clientTaskNo</td><td>String</td><td>客户订单号</td></tr> 
+<tr><td>taskNo</td><td>String</td><td>我司订单号</td></tr> 
+<tr><td>code</td><td>String</td><td>SUCCESS是充值成功，ONORDER是充值中，其余均为失败</td></tr> 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>示例</h4>
+                        <div class="secondMethodBox">
+                            <ul>
+                				<li>
+<pre>
+{
+    "clientTaskNo": "xxxx",
+    "responseCode": "SUCCESS",
+    "taskNo": "xxxx"
+} 
+</pre>	
+                    			</li>
+                    			<li>若查询超时不能认为是失败。</li>
+                			</ul>
+                        </div>
+                    </div>  	
+               </div>
+            </div>
+        </div>
+             <!--footer-->
+ <div class="footer">
+      <p class="footerp">北京亿美软通科技有限公司 <span>京ICP备05069632号-1</span><img src="../img/mary_11.png" alt="" /><span>京公网安备11010502031242号</span></p>
+ </div>
+ <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" src="../js/jquery.liMarquee.js"></script>
+ <script type="text/javascript" src="../js/scroll.js"></script>
+ <script type="text/javascript" src="../js/index.js"></script> 
+ <script type="text/javascript" src="../js/documentcenter.js"></script>
+	
+		<style>
+.hoverS{
+	background:#0557bd !important;
+}
+.hoverS a{
+	color:#fff !important;
+}
+</style>
+<script type="text/javascript">
+   $(document).ready(function(){
+    var $liT=$('.tit_list li');
+		$liT.hover(function(){
+		 $(this).addClass('hoverS');
+		},function(){
+		 $(this).removeClass('hoverS');
+		});
+    $('.tit_list2 li a,.tit_list1 li a').hover(function(){
+     $(this).addClass('contentC');
+     $(this).siblings('em').addClass('contentbg');
+    },function(){
+     $(this).removeClass('contentC');
+     $(this).siblings('em').removeClass('contentbg');
+    });
+    
+    /*友情链接区*/
+    $(".fri_link").liMarquee({direction:'up'});
+   });
+  </script> <script type="text/javascript">
+   var shareUrl = "";
+   var shareTitle = "分享标题";
+   shareUrl="http://"+window.location.host;
+   function weixin(url){
+ 
+    var shareUrl1=shareUrl+url;
+    window.open("http://www.jiathis.com/send/?webid=weixin&url=" + shareUrl1 + "&title=" + shareTitle);
+    
+    }
+    
+    function tqq(url){
+
+    var shareUrl2=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tqq&url=" + shareUrl2 + "&title=" + shareTitle);
+     
+    }
+    
+    function qzone(url){
+ 
+    var shareUrl3=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=qzone&url=" + shareUrl3 + "&title=" + shareTitle);
+     
+    }
+    
+    function tsina(url){
+  
+    var shareUrl4=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tsina&url=" + shareUrl4 + "&title=" + shareTitle);
+     
+    }
+    
+   
+  </script>
+  <script type="text/javascript" src="../js/Live800.js"></script>
+ 
+</body>

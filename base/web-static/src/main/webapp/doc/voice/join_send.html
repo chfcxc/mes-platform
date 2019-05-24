@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>亿美软通</title>
+<link type="image/x-icon" rel="shortcut icon" href="../img/favicon.ico">
+<link type="image/x-icon" rel="bookmark" href="../img/favicon.ico">
+<link type="image/x-icon" rel="icon" href="../img/favicon.ico">
+<link rel="stylesheet" href="../css/comment.css" />
+<link rel="stylesheet" href="../css/index.css" />
+<link rel="stylesheet" href="../css/documentCenter.css" />
+<link rel="stylesheet" href="../iconfont/iconfont.css" />
+<link rel="stylesheet" href="../css/swiper.min.css" />
+</head>
+
+<body>
+	<!--头部-->
+	<div class="topbar">
+		<div class="topcon">
+			<div class="logo">
+				<a href="http://www.emay.cn/"></a>
+			</div>
+			<div class="top_list">
+				<div class="listDiv">
+					<h3 class="bor_L">
+						<a href="http://www.emay.cn/" target="_blank">官网首页</a>
+					</h3>
+				</div>
+				<div class="listDiv">
+					<h3>
+						<a href="http://www.emay.cn/article283.html" target="_blank">立即申请</a>
+					</h3>
+				</div>
+				<div class="listDiv">
+					<h3>
+						<a href="http://mtn.b2m.cn:8080/static/doc/index.html"
+							target="_blank">文档中心</a>
+					</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dc_banner">
+		<img src="../img/dc_img/dc_banner.png" />
+	</div>
+	<!--文档中心-->
+	<div class="container">
+		<div class="documentCenter">
+			<!--<div class="dc_left fl">
+               		<div class='location_wrapper'>
+               			<img src="../img/dc_img/location.png">当前位置：<a href="../index.html">文档中心</a> > 金融营销
+               		</div>							
+                    <h2 class="active"><a href="../join/join_send.html"><span></span>金融营销接口</a></h2>
+                    <ul style="display:block">
+                   	     <li class="liactive"><a href="../join/join_send.html">金融营销接口</a></li>
+                         <li><a href="../join/join_getstatus.html">主动获取状态报告接口</a></li>
+                         <li><a href="../join/join_balance.html">余额获取接口</a></li>
+                    </ul>
+                    <h2><a href="../join/join_statuscode.html"><span></span>状态报告表</a></h2>
+                    <h2><a href="../join/join_Interfacestatuscode.html"><span></span>接口状态码表</a></h2>
+                    <div class="hotline">
+                        <h4 class="titL">7x24小时客服热线 ></h4>
+                        <div class="ym_phone">
+                            <div><img src="../img/phoneC_08.png" alt="" />售前：<span>400-810-7255</span></div>
+                            <div><img src="../img/phoneC_08.png" alt="" />售后：<span>400-779-7255</span></div>
+                        </div>
+                    </div>
+               </div>-->
+			<div id="voiceleft"></div>
+			<div class="dc_right fr">
+				<div class="headWrap">
+					<h2>语音短信</h2>
+					<div class="headcontent">
+						<p>&nbsp;&nbsp;金融营销接口，所有参数均通过post参数提交,注意：部分参数如内容需要
+							进行URLENCODE转码保证数据能够正常传输。</p>
+						<p>字符集：普通接口传出数据仅支持UTF-8字符集编码；</p>
+					</div>
+				</div>
+				<div class="headWrap">
+					<h2>发送语音短信接口</h2>
+				</div>
+				<div class="secondWrap">
+					<h2>请求</h2>
+					<div class="secondcontent">
+						<p>请求数据格式为post</p>
+					</div>
+				</div>
+				<div class="secondMethod">
+					<h4>链接</h4>
+					<div class="secondMethodBox">
+						<p>http://ip:port/join/send</p>
+					</div>
+				</div>
+				<div class="secondMethod">
+					<h4>参数</h4>
+					<div class="secondMethodBox">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th width="110">参数</th>
+									<th width="80">类型</th>
+									<th width="330">描述</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>appId</td>
+									<td>String</td>
+									<td>用户Appid(必填)</td>
+								</tr>
+								<tr>
+									<td>timestamp</td>
+									<td>String</td>
+									<td>时间戳(必填,提交时间)<br />格式：yyyyMMddHHmmss 14位（保证跟北京<br />时间误差1分钟之内）
+									</td>
+								</tr>
+								<tr>
+									<td>sign</td>
+									<td>String</td>
+									<td>签名(必填)<br />格式：md5(appId+ secretKey + timestamp) <br />32位
+									</td>
+								</tr>
+								<tr>
+									<td>voiceContent</td>
+									<td>String</td>
+									<td>语音内容(必填，语音内容+互动语音内容+<br /> 留言语音内容 最多500字）
+									</td>
+								</tr>
+								<tr>
+									<td>customJoinIds</td>
+									<td>String</td>
+									<td>自定义消息ID(选填)最长64位<br /> 与手机号一一对应 最多500个，使用英文逗号分<br />隔
+									</td>
+								</tr>
+								<tr>
+									<td>isInteractive</td>
+									<td>String</td>
+									<td>(选填)是否互动 0 不互动 , 1 互动（根据业务填<br />写）
+									</td>
+								</tr>
+								<tr>
+									<td>interactiveContent</td>
+									<td>String</td>
+									<td>(选填)互动语音内容(选填，语音内容+互动语音内<br />容+留言语音内容 最多500字）
+									</td>
+								</tr>
+								<tr>
+									<td>isAcousticSign</td>
+									<td>String</td>
+									<td>(选填)是否留言 0 不留言 , 1 留言（根据业务填<br />写）
+									</td>
+								</tr>
+								<tr>
+									<td>acousticSignContent</td>
+									<td>String</td>
+									<td>(选填)留言语音内容(选填，语音内容+互动语音内<br />容+留言语音内容 最多500字）
+									</td>
+								</tr>
+								<tr>
+									<td>smsContent</td>
+									<td>String</td>
+									<td>(选填)短信内容</td>
+								</tr>
+								<tr>
+									<td>triggerConditions</td>
+									<td>String</td>
+									<td>(必填)短信触发条件 3-按键 4-接通时间到达配置时间时</td>
+								</tr>
+								<tr>
+									<td>keyContent</td>
+									<td>String</td>
+									<td>(选填)按键触发短信按键（数字0-9， 当<br />triggerConditions 为 3 时必填）
+									</td>
+								</tr>
+								<tr>
+									<td>connectTime</td>
+									<td>String</td>
+									<td>(选填)接通时间到达配置时间,按键为4时必填</td>
+								</tr>
+								<tr>
+									<td>timingTime</td>
+									<td>String</td>
+									<td>(选填)定时时间，格式为 yyyyMMddHHmmss</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="secondMethod">
+					<h4>示例</h4>
+					<p>
+						http://ip:port/join/send?appId=EUCP-EMY-DDDD-3EEEE&amp;timestamp=201701011200<br />
+						00&sign=PIEUDJI987EUID62PKEDSESQEDSEDFSE&mobiles=18001098901&voiceContent=1234&cust<br />
+						omJoinIds=10001&isInteractive=1&interactiveContent=1234&acousticSignContent=nihao&s<br />
+						msContent=nihao&triggerConditions=3&keyContent=1&timingTime=20180809101010&connectTime=10
+					</p>
+				</div>
+				<div class="secondWrap">
+					<h2>响应</h2>
+					<p>响应数据格式为Json。</p>
+				</div>
+				<div class="secondMethod">
+					<h4>参数</h4>
+					<div class="secondMethodBox">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th width="110">参数</th>
+									<th width="80">类型</th>
+									<th width="330">描述</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>code</td>
+									<td>String</td>
+									<td>请求状态码，详见附录《接口状态码表》</td>
+								</tr>
+								<tr>
+									<td>mobile</td>
+									<td>String</td>
+									<td>手机号</td>
+								</tr>
+								<tr>
+									<td>joinId</td>
+									<td>String</td>
+									<td>消息ID</td>
+								</tr>
+								<tr>
+									<td>customJoinId</td>
+									<td>String</td>
+									<td>客户自定义消息ID</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="secondMethod">
+					<h4>示例</h4>
+					<div class="secondMethodBox">
+
+
+
+
+						<pre>
+    {
+        "code" : "SUCCESS",
+        "data" : [ {
+                "mobile":"15538850000",
+                "joinId":"20170392833833891100",
+                "customJoinId":"20170392833833891100"
+        }]
+    }
+        
+</pre>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="widget" id="widget">
+		<a href="javascript:void(0);">TOP</a>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<p class="footerp">
+			北京亿美软通科技有限公司 <span>京ICP备05069632号-1</span><img
+				src="../img/mary_11.png" alt="" /><span>京公网安备11010502031242号</span>
+		</p>
+	</div>
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.liMarquee.js"></script>
+	<script type="text/javascript" src="../js/scroll.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/documentcenter.js"></script>
+
+	<style>
+.hoverS {
+	background: #0557bd !important;
+}
+
+.hoverS a {
+	color: #fff !important;
+}
+</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var $liT = $('.tit_list li');
+			$liT.hover(function() {
+				$(this).addClass('hoverS');
+			}, function() {
+				$(this).removeClass('hoverS');
+			});
+			$('.tit_list2 li a,.tit_list1 li a').hover(function() {
+				$(this).addClass('contentC');
+				$(this).siblings('em').addClass('contentbg');
+			}, function() {
+				$(this).removeClass('contentC');
+				$(this).siblings('em').removeClass('contentbg');
+			});
+
+			/*友情链接区*/
+			$(".fri_link").liMarquee({
+				direction : 'up'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		var shareUrl = "";
+		var shareTitle = "分享标题";
+		shareUrl = "http://" + window.location.host;
+		function weixin(url) {
+
+			var shareUrl1 = shareUrl + url;
+			window.open("http://www.jiathis.com/send/?webid=weixin&url="
+					+ shareUrl1 + "&title=" + shareTitle);
+
+		}
+
+		function tqq(url) {
+
+			var shareUrl2 = shareUrl + url;
+			window.open("http://www.jiathis.com/send/?webid=tqq&url="
+					+ shareUrl2 + "&title=" + shareTitle);
+
+		}
+
+		function qzone(url) {
+
+			var shareUrl3 = shareUrl + url;
+			window.open("http://www.jiathis.com/send/?webid=qzone&url="
+					+ shareUrl3 + "&title=" + shareTitle);
+
+		}
+
+		function tsina(url) {
+
+			var shareUrl4 = shareUrl + url;
+			window.open("http://www.jiathis.com/send/?webid=tsina&url="
+					+ shareUrl4 + "&title=" + shareTitle);
+
+		}
+	</script>
+	<script type="text/javascript" src="../js/Live800.js"></script>
+
+</body>
+</html>

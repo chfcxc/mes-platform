@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsServiceCodeParam" table="fms_service_code_param">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="appId" column="app_id" type="string" />
+		<property name="remark" column="remark" type="string" />
+		<property name="getReportType" column="get_report_type" type="int" />
+		<property name="ipConfiguration" column="ip_configuration" type="string" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

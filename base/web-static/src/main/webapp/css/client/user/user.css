@@ -1,0 +1,40 @@
+	.main_right{min-height:500px;}
+	#UserForm,#modifyUserForm{ width:1010px;margin:0 auto;}
+	#modifyUserForm{margin-top:8px; margin-bottom:20px;}
+	#UserForm{ margin-bottom:20px;margin-top:10px;}
+	.form_box .item .item-label{width:100px;}
+	.simSelect-title{cursor:pointer;}
+	.simSelect-title input{margin:0;border-radius:2px 0 0 2px;border-right:none;}
+	.simSelect-title span{width:20px;height:33px;border:#ccc 1px solid;float:left;border-radius:0 2px 2px 0;}
+	.simSelect-title i{width:14px;height:14px;float:left;margin-left:3px;display:inline;margin-top:10px; background:url("../../../img/arrow.png") no-repeat 0 -13px;}
+	.simSelect-cen{position:absolute; right: 268px;
+    top: 34px;width:230px;  border:#ccc 1px solid; height:220px; background:#fff; display:none; overflow:hidden; z-index: 99999999; }
+	.simSelect-text{ width:230px; height:180px; overflow:auto; }
+	.simSelect-foot{ text-align:center; }
+	.simSelect-foot .btn{ padding:5px 0; background: -moz-linear-gradient(center top , #0183e1, #629fe2);background: -webkit-linear-gradient(top , #0183e1, #629fe2); border: 1px solid #0183e1; border-radius: 5px; color: #fff; cursor: pointer; display: inline-block; height: auto;  margin: 0 10px; padding: 5px 24px; }
+	.simSelect-text dl dd{ margin-left:25px;  }
+	.simSelect-text dl dd span{ cursor:pointer; line-height: 180%; display:block; width:160px; *width:100px; }
+	.simSelect-text dl dd i{ float:left; margin: 7px 3px 0; }
+	.simSelect {padding-left:40px;}
+	.red{color:red;}
+	.checkR{margin-left:10px; width:560px;}
+    .checkR label{float:left;padding-left:4px;padding-right:10px;}
+    .jueselabel{display:block}
+	.tishi{position:absolute;width:270px; display:inline-block;margin-left:4px;}
+	#realname-error,#department-error,#email-error,#mobile-error{text-align:left; width:220px;}
+	#username-error{width:256px;}
+	.detailuser .tipFoot{margin-bottom:20px;}
+	.detailuser input{border:none;box-shadow:none;}
+	.detailuser .item{min-height:30px;margin-left:32%;}
+	.firstitem{margin-top:30px;}
+	.firstitem #username{border:none;box-shadow:none;}
+.qux{height:auto;}
+	.checkR label{position:relative;}
+	.checkR label .shc{position:absolute; word-wrap:break-word;  z-index:9999;border:1px solid #767676; border-radius:3px; 
+	background:-moz-linear-gradient( #ffffff,#e4e5f0);
+	background:-ms-linear-gradient(#ffffff, #e4e5f0);
+	background:-webkit-linear-gradient(#ffffff, #e4e5f0);
+	background:-o-linear-gradient(#ffffff, #e4e5f0);
+	 display:inline-block; line-height:23px; top:30px; left:10px;padding-left:8px; 
+	 padding-right:8px;}
+	.checkR label:hover{cursor:pointer;}

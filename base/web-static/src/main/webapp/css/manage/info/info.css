@@ -1,0 +1,319 @@
+.mp30 {
+	margin-top: 30px;
+}
+
+#infoForm .tipFoot {
+	margin-bottom: 20px;
+}
+
+.item .item-label {
+	width: 160px;
+}
+
+.form_box .item {
+	font-family: "Microsoft yahei";
+	width: 60%;
+	margin-left:24%;
+}
+.endinput{width:180px !important;}
+.form_box form {
+	border-radius: 5px;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+#clientNumber-error, #clientName-error, #userName-error, #linkman-error,
+	#mobile-error,#salename-error {
+	left: 124px;
+}
+
+input.noMi {
+	border: none;
+	box-shadow: none;
+}
+/*鐎广垺鍩涚拹锟�?褰跨拠锔藉剰*/
+.wrapBox {
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+	border: 1px solid #def0fb;
+	font-family: "Microsoft yahei";
+	font-size: 14px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.wrapBox h2, .wrapBox th {
+	font-weight: normal;
+}
+
+.wrapBox h2 {
+	height: 40px;
+	width: 98%;
+	margin-left: 1%;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px dotted #def0fb;
+}
+
+.accountInformation, .managingNumber {
+	width: 98%;
+	margin-left: 1%;
+	border: 1px solid #def0fb;
+	border-radius: 5px;
+	margin-bottom: 10px; 
+	margin-top: 10px; 
+}
+
+.ziAccount, .manageAccount {
+	width: 100%;
+}
+
+.aTitle, .sTitle {
+	height: 40px;
+	line-height: 40px;
+	text-indent: 1em;
+}
+
+.aTitle {
+	font-weight: bold;
+	line-height: 40px;
+	position: relative;
+	background: #def0fb;
+	border-radius: 5px;
+}
+
+.aTitle .createA {
+	position: absolute;
+	right: 2%;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.sTitle {
+	border-bottom: 1px dotted #def0fb;
+	line-height: 50px;
+}
+
+/*鐎涙劘澶勯崣锟�?*/
+.temple_content {
+	background: #f2f9fd;
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.temple_content label {
+	display: inline-block;
+	width: 260px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.relation label {
+	width: 122px !important;
+	
+}
+.relation{
+	/* height: 148px;
+	overflow:auto; */
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+}
+.temple_content label input {
+	margin-left: 50px;
+}
+
+.childAcc {
+	border: none;
+}
+
+.temple_content .sTitle {
+	height: 40px;
+	line-height: 40px;
+	text-indent: 1em;
+	border-bottom: 2px dotted #def0fb;
+	margin-top: -16px;
+}
+
+.childDetail {
+	width: 98%;
+	margin-left: 1%;
+	padding-top: 30px;
+	position: relative;
+}
+
+.childDetail div {
+	height: 40px;
+	font-weight: bold;
+	width: 930px;
+}
+
+.childDetail label {
+	height: 40px;
+	width: 70px;
+	display: inline-block;
+	text-align: right;
+}
+
+.username-error, .password-error {
+	position: absolute;
+	top: 116px;
+}
+
+.username-error {
+	left: 100px;
+	display: none;
+}
+
+.password-error {
+	left: 344px;
+	display: none;
+}
+
+.childDetail .modifych {
+	border: none;
+	box-shadow: none;
+}
+
+#userAssignlist, #userRoleAssignlist {
+	display: none;
+}
+
+#newpass-error, #affirm-error {
+	left: 126px;
+}
+
+.tishi {
+	left: 392px;
+	position: absolute;
+	top: 100px;
+	color: red;
+}
+
+.tipFoot .tip-cancel {
+	margin-left: 30px;
+}
+
+#infoForm input {
+	width: 300px;
+}
+
+.tipFootMp20 {
+	margin-top: 20px;
+}
+/*vip*/
+.form_box .item:first-child {
+	margin-top: 0px;
+}
+
+.addvipbox .item {
+	width: 33%;
+}
+
+.addvipbox .isvipbox {
+	width: 7%;
+	height: 30px;
+	line-height: 30px;
+}
+
+#infoForm .addvipbox input {
+	min-width: 100px;
+}
+
+#infoForm input#isvip {
+	min-width: 30px;
+	max-width: 30px;
+}
+.form_box form{
+	margin-top:30px;
+}
+
+.telephoneItem div {
+	float: left;
+	width: 15px;
+	text-align: right;
+}
+
+.telephoneItem .item-text:nth-child(2) {
+	width: 38px !important;
+}
+
+.telephoneItem .item-text:nth-child(4) {
+	width: 110px !important;
+}
+
+.telephoneItem .item-text:nth-child(6) {
+	width: 76px !important;
+}
+
+.blue {
+	background: #629fe2;
+	color: #ffffff;
+}
+/* .emtable_table_parent{min-height:100px; max-height:300px;overflow:auto;} */
+#clientType, #authority,#viplevel{
+	width: 312px;
+}
+/*澧烇拷?锟芥湇锟�?*/
+#valueAddedService {
+	float: left;
+	width: auto;
+	height: 50px;
+	padding-left: 10px;
+}
+
+#valueAddedService input {
+	width: 15px;
+	height: 15px;
+}
+#serviceType {
+	float: left;
+	width: auto;
+	height: 50px;
+	padding-left: 10px;
+}
+
+#serviceType input {
+	width: 15px;
+	height: 15px;
+}
+
+.aTitle i {
+    float: right;
+    margin-right: 14px;
+    display: inline;
+    width: 0px;
+    height: 0px;
+    border: transparent 10px solid;
+    border-bottom-color: #1fb5ad;
+}
+.system-on i {
+    margin-top: 14px;
+    border: transparent 10px solid;
+    border-top-color: #1fb5ad;
+}
+.sBox{margin-top:10px;}
+.secand{display:none;}
+.baseDetail .tipFoot{ padding:0px !important; 
+     text-align: center !important; margin-bottom:10px;}
+.baseDetail .accountInformation,.baseDetail .managingNumber ,.sBox .accountInformation,.fBox .accountInformation{
+	width: 88%;
+	margin-left: 1%;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+.wrapBox .tipFoot{
+	padding:0px !important; 
+     text-align: right !important; margin-bottom:10px;
+     margin-right:10%;
+}
+.centerbtn{text-align:center !important};
+#voiceServiceCode label{width:260px;}

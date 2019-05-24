@@ -1,0 +1,25 @@
+#clientUserNameAndCode{
+	width:300px;
+}
+.item .item-label{
+	width:100px;
+}
+.usernamebox{
+	width:100%;
+}
+.chooseBtn{
+	height:50px;
+	margin:5px 0;
+	display:inline-block;
+	float:right;
+	padding:0;
+}
+.chooseBtn button{
+	padding:3px 10px;
+	margin:0;
+}
+#tips{
+	margin: 0 auto;
+    text-align: center;
+    width: 96%;
+}

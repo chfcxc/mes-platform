@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       classpath:/org/springframework/beans/factory/xml/spring-beans-4.0.xsd  
+       http://www.springframework.org/schema/aop 
+       classpath:/org/springframework/aop/config/spring-aop-4.0.xsd 
+       http://www.springframework.org/schema/tx 
+       classpath:/org/springframework/transaction/config/spring-tx-4.0.xsd 
+       http://www.springframework.org/schema/context 
+       classpath:/org/springframework/context/config/spring-context-4.0.xsd 
+       ">
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:mail.properties</value>
+				<value>classpath:redis.properties</value>
+				<value>classpath:dubbo.properties</value>
+				<value>classpath:dubbo-info.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<context:component-scan base-package="cn.emay.eucp" />
+
+	<bean id="beanFactoryUtils" class="cn.emay.common.spring.BeanFactoryUtils" />
+
+	<bean init-method="init"  destroy-method="destroy"  
+		class="cn.emay.eucp.task.multiple.init.InitService" />
+	
+	
+	<bean class="cn.emay.common.cache.redis.RedisSingleClient" id="redis"
+		init-method="init" destroy-method="close">
+		<property name="properties">
+			<props>
+				<prop key="host">${redis.single.host}</prop>
+				<prop key="port">${redis.single.port}</prop>
+				<prop key="timeout">${redis.single.timeout}</prop>
+				<prop key="maxIdle">${redis.single.maxIdle}</prop>
+				<prop key="maxTotal">${redis.single.maxTotal}</prop>
+				<prop key="minIdle">${redis.single.minIdle}</prop>
+				<prop key="maxWaitMillis">${redis.single.maxWaitMillis}</prop>
+				<prop key="datePattern">yyyy-MM-dd HH:mm:ss SSS</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- <bean class="cn.emay.common.cache.redis.RedisClusterClient" id="redis"
+		init-method="init" destroy-method="close">
+		<property name="properties">
+			<props>
+				<prop key="hosts">${redis.cluster.hosts}</prop>
+				<prop key="maxRedirections">${redis.cluster.maxRedirections}</prop>
+				<prop key="timeout">${redis.cluster.timeout}</prop>
+				<prop key="maxIdle">${redis.cluster.maxIdle}</prop>
+				<prop key="maxTotal">${redis.cluster.maxTotal}</prop>
+				<prop key="minIdle">${redis.cluster.minIdle}</prop>
+				<prop key="maxWaitMillis">${redis.cluster.maxWaitMillis}</prop>
+				<prop key="datePattern">yyyy-MM-dd HH:mm:ss SSS</prop>
+			</props>
+		</property>
+	</bean> -->
+	
+	
+	
+		<bean class="cn.emay.common.cache.redis.RedisSingleClient" id="shortLinkRedis" init-method="init" destroy-method="close">
+			<property name="properties">
+				<props>
+					<prop key="host">${shortlink.redis.single.host}</prop>
+					<prop key="port">${shortlink.redis.single.port}</prop>
+					<prop key="timeout">${shortlink.redis.single.timeout}</prop>
+					<prop key="maxIdle">${shortlink.redis.single.maxIdle}</prop>
+					<prop key="maxTotal">${shortlink.redis.single.maxTotal}</prop>
+					<prop key="minIdle">${shortlink.redis.single.minIdle}</prop>
+					<prop key="maxWaitMillis">${shortlink.redis.single.maxWaitMillis}</prop>
+					<prop key="datePattern">yyyy-MM-dd HH:mm:ss SSS</prop>
+				</props>
+			</property>
+		</bean>
+
+
+	<!-- <bean class="cn.emay.common.cache.redis.RedisClusterClient" id="shortLinkRedis"
+			init-method="init" destroy-method="close">
+			<property name="properties">
+				<props>
+					<prop key="hosts">${shortlink.redis.cluster.hosts}</prop>
+					<prop key="maxRedirections">${shortlink.redis.cluster.maxRedirections}</prop>
+					<prop key="timeout">${shortlink.redis.cluster.timeout}</prop>
+					<prop key="maxIdle">${shortlink.redis.cluster.maxIdle}</prop>
+					<prop key="maxTotal">${shortlink.redis.cluster.maxTotal}</prop>
+					<prop key="minIdle">${shortlink.redis.cluster.minIdle}</prop>
+					<prop key="maxWaitMillis">${shortlink.redis.cluster.maxWaitMillis}</prop>
+					<prop key="datePattern">yyyy-MM-dd HH:mm:ss SSS</prop>
+				</props>
+			</property>
+		</bean> -->
+		<bean class="cn.emay.common.mail.MailSender" id="mailSender" init-method="init" >
+			<property name="props" >
+				<props>
+					<prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+					<prop key="mail.smtp.host">${mail.smtp.host}</prop>
+					<prop key="mail.user">${mail.user}</prop>
+					<prop key="mail.password">${mail.password}</prop>
+					<prop key="mail.smtp.timeout">${mail.smtp.timeout}</prop>
+					<prop key="mail.smtp.connectiontimeout">${mail.smtp.connectiontimeout}</prop>
+				</props>
+			</property>
+		</bean>	
+</beans>

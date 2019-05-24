@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.Foa" table="system_foa">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="subSystem" column="sub_system" type="int" />
+		<property name="businessType" column="business_type" type="int" />
+		<property name="descProblem" column="desc_problem" type="string" />
+		<property name="reply" column="reply" type="string" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

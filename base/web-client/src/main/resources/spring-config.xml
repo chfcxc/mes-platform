@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       classpath:/org/springframework/beans/factory/xml/spring-beans-4.0.xsd  
+       http://www.springframework.org/schema/aop 
+       classpath:/org/springframework/aop/config/spring-aop-4.0.xsd 
+       http://www.springframework.org/schema/context 
+       classpath:/org/springframework/context/config/spring-context-4.0.xsd 
+       ">
+
+	<bean id="configBean" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:dubbo.config.properties</value>
+				<value>classpath:dubbo-info.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<context:component-scan base-package="cn.emay">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+
+	<bean class="cn.emay.common.spring.BeanFactoryUtils" id="beanFactoryUtils" />
+
+	<bean id="customHandlerExceptionResolver" class="cn.emay.eucp.web.common.spring.CustomHandlerExceptionResolver" p:order="1" />
+
+
+	<import resource="classpath:spring-dubbo.xml" />
+	
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.ContactGroupAssign" table="system_contact_group_assign">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="groupId" column="group_id" type="long" />
+		<property name="contactId" column="contact_id" type="long" />
+		<property name="createTime" column="create_time" type="timestamp" />
+		<property name="isDelete" column="is_delete" type="boolean" />
+	</class>
+</hibernate-mapping>

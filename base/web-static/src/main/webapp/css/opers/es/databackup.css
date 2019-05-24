@@ -1,0 +1,16 @@
+.width115 {
+    text-align: center;
+    width: 85px;
+}
+
+#startTime, #endTime,#dateStrNew{
+    width: 200px;
+}
+#taskTypeSel{
+	width:210px;
+	height:28px;
+	line-height:28px;
+}
+.item .item-label{
+	width:84px;
+}

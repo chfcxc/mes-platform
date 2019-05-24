@@ -1,0 +1,35 @@
+#fullForm select {
+	width: 212px;
+}
+
+#companyCode {
+	width: 100px;
+}
+
+#companyInput, #provinceInput, #companyUpdate {
+	width: 212px;
+}
+/* from 样式*/
+.form_box form {
+	width: 788px;
+	margin: 10px  auto 0;
+}
+
+/* from 样式*/
+
+.form_box .item {
+	width: 50%;
+}
+
+.form_box .item:first-child {
+	margin-top: 30px;
+}
+
+.mp30 {
+	margin-top: 20px;
+}
+
+.form_box form .tipFoot {
+	margin-bottom: 20px;
+}
+	

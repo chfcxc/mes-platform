@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.License" table="system_license">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="systemEnterpriseId" column="system_enterprise_id" type="long" />
+		<property name="product" column="product" type="string" />
+		<property name="version" column="version" type="string" />
+		<property name="beginTime" column="begin_time" type="timestamp" />
+		<property name="endTime" column="end_time" type="timestamp" />
+		<property name="mac" column="mac" type="string" />
+		<property name="serviceType" column="service_type" type="string" />
+		<property name="operatorId" column="operator_id" type="long" />
+		<property name="operatorName" column="operator_name" type="string" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

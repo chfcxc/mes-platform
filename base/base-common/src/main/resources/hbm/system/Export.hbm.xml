@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.Export" table="system_export">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="userId" column="user_id" type="long" />
+		<property name="module" column="module" type="string" />
+		<property name="queryCriteria" column="query_criteria" type="string" />
+		<property name="createTime" column="create_time" type="timestamp" />
+		<property name="state" column="state" type="int" />
+		<property name="path" column="path" type="string" />
+		<property name="fileName" column="file_name" type="string" />
+		<property name="startTime" column="start_time" type="timestamp" />
+		<property name="finishTime" column="finish_time" type="timestamp" />
+		<property name="systemFor" column="system_for" type="string" />
+		<property name="businessType" column="business_type" type="string" />
+	</class>
+</hibernate-mapping>

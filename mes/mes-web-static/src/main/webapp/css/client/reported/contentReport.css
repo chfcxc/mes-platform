@@ -1,0 +1,373 @@
+/* .main_right {
+	height:735px;
+}
+ */
+.sms-wrap {
+	border: 1px solid #def0fb;
+	border-radius: 5px;
+	margin: 10px auto 0;
+	width: 98%;
+	min-height: 680px;
+	position: relative;
+}
+
+.sms-left {
+	position: absolute;
+	left: 0;
+	right: 280px;
+	padding: 10px 0 10px 10px;
+	overflow: hidden;
+}
+
+.sms-item {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.sms-item label.item-label {
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	line-height: 32px;
+	width: 15%;
+}
+
+.sms-item textarea {
+	width: 82%;
+	height: 100px;
+}
+
+.sms-item #templateName
+	{
+	width: 190px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: inline;
+	margin: 0 5px;
+	height: 30px;
+	padding-left: 3px;
+	padding-right: 0;
+}
+
+.prelative-mobile {
+	position: relative;
+	height: 174px;
+}
+
+.bringspan {
+	width:80%;
+	display:inline-block;
+	margin-left:15%;
+	margin-top: 15px;
+}
+.bringspan span {
+	display:inline-block;
+	margin-left: 15px;
+	border: 1px solid #d0d0d0;
+	padding: 5px 8px;
+}
+
+.templateExample {
+	width:83%;
+	margin-left:15%;
+	background-color:#d0d0d0;
+	padding: 10px;
+	box-sizing:border-box;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.fmsserviceCode {
+	width:83%;
+	margin-right:2%;
+	height: 35px;
+}
+
+.smsgxTemplate {
+	margin-right: 15px;
+}
+
+.sms-item .fielsBtn {
+	position: absolute;
+	left: 30%;
+	cursor: pointer;
+	display: block;
+}
+
+.sms-item .fielsBtn a {
+	background: #03a9f3 none repeat scroll 0 0;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 10px;
+	padding: 4px 8px;
+}
+
+.sms-item label.lh100 {
+	line-height: 100px;
+}
+
+.textarea-box {
+	margin-top: 15px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.empty_box {
+	position: absolute;
+	display: inline-block;
+	height: 20px;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: 20px;
+	right: 30px;
+	bottom: 7px;
+}
+
+.tips {
+	margin: 5px 0 0px 15%;
+	font-size: 14px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.bttomColor {
+	border-bottom: 1px dashed #d0d0d0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.tempatedown {
+	background: #FEA720 none repeat scroll 0 0;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 10px 0 5px;
+	padding: 4px 6px;
+	border: none;
+}
+
+
+.send-method {
+	height: 33px;
+	line-height: 33px;
+	display: inline-block;
+}
+
+.send-method input {
+	box-shadow: none;
+	font-size: 14px;
+}
+
+.send-method input[type='radio'] {
+	border: none;
+}
+
+.pr20 {
+	padding-right: 4px;
+}
+
+.bottom-btn {
+	margin: 13px auto 10px;
+	text-align: center;
+}
+
+.btn-blue {
+	background-color: #03a9f3;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0;
+	padding: 6px 24px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mb0 {
+	margin-bottom: 0px;
+}
+
+.red {
+	color: #ff0000;
+	padding: 0 3px;
+}
+
+.tipBox {
+	width: 100%;
+}
+
+.tipBox .tipImg {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/greenhook.png")
+		no-repeat scroll 0 0;
+	width: 59px;
+	height: 40px;
+	float: left;
+	background-size: 59px 40px;
+}
+
+.tipText {
+	float: left;
+	margin-left: 10px;
+}
+
+.tipText dl {
+	
+}
+
+.tipText dt {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+}
+
+.tipText dd {
+	height: 30px;
+	line-height: 30px;
+}
+
+.tipText a {
+	text-decoration: underline;
+	padding-left: 4px;
+	color: blue;
+}
+
+.tipText a:hover {
+	cursor: pointer;
+}
+/*右侧--手机*/
+.sms-right {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/phone.png")
+		no-repeat scroll 0 0;
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	padding: 0px 0px 10px 0;
+	width: 260px;
+	height: 470px;
+	background-size: 260px 470px
+}
+
+.phone {
+	height: 290px;
+	margin: 90px auto auto;
+	width: 210px;
+}
+
+.phone-top {
+	height: 240px;
+	line-height: 170%;
+	overflow-y: auto;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.phone-bottom {
+	height: 50px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#delayedTime, #personal-delayedTime, #batch-delayedTime {
+	display: inline-block;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.file {
+	position: relative;
+	display: inline;
+	background: #03a9f3;
+	border: 1px solid #03a9f3;
+	border-radius: 5px;
+	padding: 4px 6px;
+	overflow: hidden;
+	color: #fff;
+	text-decoration: none;
+	text-indent: 0;
+	margin: 0 5px 0 10px;
+}
+
+.file input {
+	overflow: hidden;
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	filter: alpha(opacity = 0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	height: 16px;
+	width: 35px;
+	display: inline;
+	padding: 4px 6px;
+}
+
+a.file:link, a.file:visited {
+	color: #fff;
+	text-decoration: none;
+}
+/* .file input:hover{
+	cursor:pointer;
+} */
+.file:hover {
+	text-decoration: none;
+}
+
+.uPload-text {
+	width: 260px;
+}
+
+textarea {
+	outline: none;
+	resize: none;
+}
+
+#deleInp-pt {
+	display: inline-block;
+}
+
+.sms-item textarea#bath-sendContent {
+	width: 98%;
+}
+
+.batchVariateBox {
+	width: 100%;
+	margin-bottom:12px;
+}
+
+.variateBoxfl {
+	width: 15%;
+}
+
+.variateBoxfr {
+	width: 70%;
+}
+
+.sms-item .variateBoxfl label.item-label {
+	width: 100%;
+}
+
+.perNav span {
+	background-color: #03a9f3 ;
+	border: 1px solid #03a9f3;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin: 5px 5px 0 0;
+	padding: 0 22px;
+}

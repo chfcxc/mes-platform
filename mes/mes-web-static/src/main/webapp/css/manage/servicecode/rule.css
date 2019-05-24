@@ -1,0 +1,43 @@
+.admo, .unsubInput{
+    margin: 0 6px 20px;
+}
+
+.red {
+	color:red;
+}
+
+.remave{
+    float: left;
+    margin-top: 5px;
+}
+
+.imgs {
+    float: left;
+    margin-top: 5px;
+    margin-left:0;
+}
+
+.only{
+	margin-left:0;
+	margin-right:0;
+}
+#pei_z input{
+	float:left;
+}
+
+.labelspan {
+	margin-left: 55px;
+	width: 305px;
+	background-color: #D7D7D7;
+    padding: 7px 5px;
+    box-sizing: border-box;
+}
+.emay-search {
+	margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.labelspan span {
+	display:inline-block;
+	margin-left:0px !important;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>亿美软通</title>
+        <link type="image/x-icon" rel="shortcut icon" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="bookmark" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/documentCenter.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="topbar">
+			<div class="topcon">
+				<div class="logo">   <a href="http://www.emay.cn/"></a> </div>
+				<div class="top_list">
+					<div class="listDiv">
+						<h3 class="bor_L"><a href="http://www.emay.cn/" target="_blank">官网首页</a></h3>
+					</div>
+	                <div class="listDiv">
+						<h3><a href="http://www.emay.cn/article283.html" target="_blank">立即申请</a></h3>
+					</div>
+					<div class="listDiv">
+						<h3><a href="http://mtn.b2m.cn:8080/static/doc/index.html" target="_blank">文档中心</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="dc_banner"><img src="../img/dc_img/dc_banner.png"/></div>
+        <!--文档中心-->
+        <div class="container">
+        	<div class="documentCenter">
+               <!--<div class="dc_left fl">
+               		 <div class='location_wrapper'>
+               			<img src="../img/dc_img/location.png">当前位置：<a href="../index.html">文档中心</a> > 语音
+               		</div>							
+                    <h2 class="active"><a href="../voice/voice_send.html"><span></span>语音接口</a></h2>
+                    <ul style="display:block">
+                   	     <li><a href="../voice/voice_send.html">通知接口</a></li>
+                         <li><a href="../voice/voice_sendVFCode.html">验证码接口</a></li>
+                         <li><a href="../voice/voice_sendCTCode.html">营销接口</a></li>
+                         <li><a href="../voice/voice_getReport.html">主动获取状态报告接口</a></li>
+                         <li><a href="../voice/voice_balance.html">余额获取接口</a></li>
+                         <li class="liactive" ><a href="../voice/voice_pushstatus.html">推送状态报告接口</a></li>
+                    </ul>
+                    <h2><a href="../voice/voice_statuscode.html"><span></span>接口状态码</a></h2>
+                    <h2><a href="../voice/voice_interfacestatusreport.html"><span></span>状态报告状态码</a></h2>
+                    <h2><a href="../voice/voice_download.html"><span></span>DEMO及文档下载</a></h2> 
+                    <div class="hotline">
+                        <h4 class="titL">7x24小时客服热线 ></h4>
+                        <div class="ym_phone">
+                            <div><img src="../img/phoneC_08.png" alt="" />售前：<span>400-810-7255</span></div>
+                            <div><img src="../img/phoneC_08.png" alt="" />售后：<span>400-779-7255</span></div>
+                        </div>
+                    </div>
+               </div>-->
+               <div id="voiceleft"></div>
+               <div class="dc_right fr">
+                    <div class="headWrap">
+                    	<h2>推送状态报告</h2>                 
+                    </div> 
+                    <div class="secondMethod">
+                        <div class="secondMethodBox">
+                       		<p>状态报告的推送分为压缩加密推送和普通推送，其中压缩加密推送可以提高传输安全性以及减轻网络压力，客户选择哪一种推送方式请咨询亿美客服人员</p>
+                       		<p>注意：推送全部采用UTF-8字符集编码。</p>
+                       		<p>注意：通过HTTP头传输appId，用户根据APPID进行匹配。</p>
+                        </div>
+                    </div>
+                    <!--  <div class="secondWrap">
+                    	<h2>请求</h2> 
+                        <div class="secondcontent">
+                        	<p>请求数据格式为post</p>
+                        </div>    
+                    </div>
+                    <div class="secondMethod">
+                        <h4>链接</h4>
+                        <div class="secondMethodBox">
+                       		<p>http://ip:port/voice/getBalance</p>
+                        </div>
+                    </div> -->
+                    <div class="secondMethod">
+                        <h4>参数</h4>
+                        <div class="secondMethodBox">
+                       		<table  border="0" cellspacing="0" cellpadding="0">
+                            	<thead>
+                                	<tr>
+                                		<th width="110">参数</th>
+                                        <th width="110">类型</th>
+                                        <th width="600">描述</th>
+                                	</tr>
+                                </thead>
+                            	<tbody>
+									<tr><td>code</td><td>String</td><td>请求状态码，详见附录接口状态码表</td></tr>
+									<tr><td>data</td><td>[]</td><td>响应数据集合</tr>
+									<tr><td>appId</td><td>String</td><td>Appid</tr>
+									<tr><td>customVoiceId</td><td>String</td><td>客户自定义id</tr>
+									<tr><td>voiceId</td><td>String</td><td>消息ID</tr>
+									<tr><td>mobile</td><td>String</td><td>手机号</tr>
+									<tr><td>callingTime</td><td>String</td><td>该通电话的呼出时间yyyy-MM-ddHH:mm:ss</tr>
+									<tr><td>callingDuration</td><td>Double</td><td>该通电话的通话时长，单位为秒</tr>
+									<tr><td>message</td><td>String</td><td>工单描述</tr>
+									<tr><td>state</td><td>String</td><td>工单状态,详见附录状态报告表</tr>
+									<tr><td>keyContent</td><td>Integer</td><td>互动语音返回按键内容</tr>
+									<tr><td>voiceSign</td><td>byte[]</td><td>互动语音的留言内容</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <div class="secondMethod">
+                     	<h4>说明</h4>
+                        <div class="secondMethodBox">
+                       		<p>由于客户接受数据为压缩加密后的byte数组，所以客户需要对数据进行解密以及解压缩操作，获取到请求的字节数组之后，进行一下操作</p>
+                       		<p>1.获取appId</p>
+								<p>appId = HTTP.getHeader(“appId”);</p>
+							<p>2.解密[根据APPID从本地获取密钥secretKey]</p>
+								<p>bytes = bytes = AES.decrypt(bytes, secretKey.getBytes(), 算法);</p>
+							<p>其中secretKey为服务号秘钥</p>
+							<p>3.解压缩</p>
+								<p>bytes = GZIPUtils.decompress(bytes);</p>
+							<p>4.获取json传数据</p>
+								<p>String  json = new String(bytes, "UTF-8");</p>
+							<p>获取到json数据后，json传为状态报告集合，之后进行业务处理（json数据详细见上表）</p>
+							<p>详细见demo</p>
+							<p>状态报告解密解压后json串示例：</p>
+
+                        </div>
+                    </div>
+                     <div class="secondMethod">
+                        <h4>示例</h4>
+                        <div class="secondMethodBox">
+                            <ul>
+                				<li>
+			<pre>
+			{
+			"code": "SUCCESS",	
+				"data": [{
+					"appId": "EUCP - EMY - DDDD - 3EEEE",
+					"voiceId": "20170392833833891100",
+					"customVoiceId": "1553885000011111",
+					"state": " SUCCESS ",
+					"message": "成功",
+					"callingTime": "2017-03-15 12:00:00",
+					"callingDuration": 68.02,
+					"mobile": "18566666666"
+			},{
+				"appId": "EUCP - EMY - DDDD - 3EEEE",
+						"voiceId": "20170392833833891100",
+						"customVoiceId": "1553885000011111",
+						"state": " SUCCESS ",
+						"message": "成功",
+						"callingTime": "2017-03-15 12:00:00",
+						"callingDuration": 68.02,
+						"mobile": "18566666666"
+			}
+			</pre>	
+                    			</li>
+                			</ul>
+                        </div>
+                    </div>
+                    <div class="secondWrap">
+                    	<h2>普通推送</h2>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>参数</h4>
+                        <div class="secondMethodBox">
+                       		<table  border="0" cellspacing="0" cellpadding="0">
+                            	<thead>
+                                	<tr>
+                                		<th width="110">参数</th>
+                                        <th width="110">类型</th>
+                                        <th width="600">描述</th>
+                                	</tr>
+                                </thead>
+                            	<tbody>                               	
+									<tr><td>code</td><td>String</td><td>请求状态码，详见附录接口状态码表</td></tr>
+									<tr><td>data</td><td>[]</td><td>响应数据集合</tr>
+									<tr><td>appId</td><td>String</td><td>Appid</tr>
+									<tr><td>customVoiceId</td><td>String</td><td>客户自定义id</tr>
+									<tr><td>voiceId</td><td>String</td><td>消息ID</tr>
+									<tr><td>mobile</td><td>String</td><td>手机号</tr>
+									<tr><td>callingTime</td><td>String</td><td>该通电话的呼出时间yyyy-MM-ddHH:mm:ss</tr>
+									<tr><td>callingDuration</td><td>Double</td><td>该通电话的通话时长，单位为秒</tr>
+									<tr><td>message</td><td>String</td><td>工单描述</tr>
+									<tr><td>state</td><td>String</td><td>工单状态,详见附录状态报告表</tr>
+									<tr><td>keyContent</td><td>Integer</td><td>互动语音返回按键内容</tr>
+									<tr><td>voiceSign</td><td>byte[]</td><td>互动语音的留言内容</tr>      
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>示例</h4>
+                        <div class="secondMethodBox">
+                            <ul>
+                				<li>
+<pre>
+{
+	"code": "SUCCESS","	
+	data": [{
+		"appId": "EUCP - EMY - DDDD - 3EEEE",
+		"voiceId": "20170392833833891100",
+		"customVoiceId": "1553885000011111",
+		"state": " SUCCESS ",
+		"message": "成功",
+		"callingTime": "2017-03-15 12:00:00",
+		"callingDuration": 68.02,
+		"mobile": "18566666666"
+	}, {
+		"appId": "EUCP - EMY - DDDD - 3EEEE",
+		"voiceId": "20170392833833891100",
+		"customVoiceId": "1553885000011111",
+		"state": " SUCCESS ",
+		"message": "成功",
+		"callingTime": "2017-03-15 12:00:00",
+		"callingDuration": 68.02,
+		"mobile": "18566666666"
+	}]
+}
+
+</pre>	
+                    			</li>
+                			</ul>
+                        </div>
+                    </div>  	
+               </div>
+            </div>
+        </div>
+        <!--footer-->
+		<div class="footer">
+             <p class="footerp">北京亿美软通科技有限公司 <span>京ICP备05069632号-1</span><img src="../img/mary_11.png" alt="" /><span>京公网安备11010502031242号</span></p>
+		</div>
+ <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" src="../js/jquery.liMarquee.js"></script>
+ <script type="text/javascript" src="../js/scroll.js"></script>
+ <script type="text/javascript" src="../js/index.js"></script> 
+ <script type="text/javascript" src="../js/documentcenter.js"></script>
+	
+		<style>
+.hoverS{
+	background:#0557bd !important;
+}
+.hoverS a{
+	color:#fff !important;
+}
+</style>
+<script type="text/javascript">
+   $(document).ready(function(){
+    var $liT=$('.tit_list li');
+		$liT.hover(function(){
+		 $(this).addClass('hoverS');
+		},function(){
+		 $(this).removeClass('hoverS');
+		});
+    $('.tit_list2 li a,.tit_list1 li a').hover(function(){
+     $(this).addClass('contentC');
+     $(this).siblings('em').addClass('contentbg');
+    },function(){
+     $(this).removeClass('contentC');
+     $(this).siblings('em').removeClass('contentbg');
+    });
+    
+    /*友情链接区*/
+    $(".fri_link").liMarquee({direction:'up'});
+   });
+  </script> <script type="text/javascript">
+   var shareUrl = "";
+   var shareTitle = "分享标题";
+   shareUrl="http://"+window.location.host;
+   function weixin(url){
+ 
+    var shareUrl1=shareUrl+url;
+    window.open("http://www.jiathis.com/send/?webid=weixin&url=" + shareUrl1 + "&title=" + shareTitle);
+    
+    }
+    
+    function tqq(url){
+
+    var shareUrl2=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tqq&url=" + shareUrl2 + "&title=" + shareTitle);
+     
+    }
+    
+    function qzone(url){
+ 
+    var shareUrl3=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=qzone&url=" + shareUrl3 + "&title=" + shareTitle);
+     
+    }
+    
+    function tsina(url){
+  
+    var shareUrl4=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tsina&url=" + shareUrl4 + "&title=" + shareTitle);
+     
+    }
+    
+   
+  </script>
+  <script type="text/javascript" src="../js/Live800.js"></script>
+ 
+</body>
+</html>

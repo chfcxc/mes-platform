@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.UpdateInfo" table="system_update_info">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="versionInfo" column="version_info" type="string" />
+		<property name="pubTime" column="pub_time" type="string" />
+		<property name="subSystem" column="sub_system" type="int" />
+		<property name="busniessType" column="busniess_type" type="int" />
+		<property name="updateInfo" column="update_info" type="string" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

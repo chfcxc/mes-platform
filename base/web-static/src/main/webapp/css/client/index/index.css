@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+/*首页*/
+.indexWrap{width:99.5%; height:100%;margin:0 auto; position:relative;margin-top: 15px;/* float:right; */clear:both;}
+.wrapBox{width:100%;height:auto; background:#ffffff; margin-bottom:10px; position:relative;}
+.wrapBox h2{font-size:14px; color:#8c8c8c; width:100%; border-bottom:1px solid #e4e4e4;  height:36px; line-height:36px;
+ text-indent:2em;}
+.oneWrap{width:100%;height:auto;}
+.account,.enterprise,.sendProfile{width:32.6%;float:left;}
+.enterprise{margin:0px 10px;}
+input.greencolor,input.orangecolor, input.bluecolor{font-weight:bold;}
+ input.greencolor{color:green;}
+ input.orangecolor{color:orange;}
+ input.bluecolor{color:blue;}
+  
+ .account,.enterprise,.sendProfile{height:245px;}
+.enterprise li,.sendProfile li{width: 335px;}
+/*账号信息*/
+.accountBox ul,.userimg{float:left;}
+.accountBox{width:100%;margin-top:20px;margin-bottom:20px;}
+.userimg{width:106px; height:100px; background:url("../../../img/client/user1.png")no-repeat 38px center;}
+.accountBox ul{padding:20px;}
+.accountBox ul li{min-width:210px;}
+.accountBox ul li span{display:inline-block; width:200px; height:40px; line-height:40px; text-indent:0.7em; font-size:16px; font-weight:bold; }
+.accountBox ul li span label{font-weight:normal;font-size:14px !important;}
+.accountBox ul li label{padding:10px;}
+.accountBox ul li input{border:none;box-shadow:none;}
+/*企业信息/发送概况（当月）*/
+.enterprise ul{padding:30px 20px; font-weight:bold;}
+.sendProfile ul{padding:10px 20px; font-weight:bold;}
+.enterprise ul li{padding:6px 0px;}
+.sendProfile ul li{padding:0px;}
+.enterprise ul li{position:relative;}
+.companyName{height:42px;}
+.enterprise label,.sendProfile label{width:62px; display:inline-block; font-size:14px !important;}
+.enterprise input,.sendProfile input{width: 223px;display:inline-block;border:none;box-shadow:none;font-weight:bold;font-size:14px !important;}
+.enterprise textarea{width: 263px;height:46px;font-weight:bold;font-size:14px !important;position:absolute;top: -2px;border:none;box-shadow:none;resize:none;overflow:hidden;}
+.enterprise li.childlabel input{width:80px; }
+.enterprise span{color:#999999;}
+.sendProfile input.greencolor{color:green;}
+.sendProfile input.orangecolor{color:orange;}
+.sendProfile input.bluecolor{color:blue;}
+/*产品服务/子账号*/
+.productService,.childAccount{margin-left:2.5%;overflow:hidden;margin-top:20px;margin-bottom:20px;min-width:1270px;}
+.childAccount{min-height:104px;}
+.productService li,.childAccount li{width:16%; float:left;margin:0.6%;}
+.productService li{background:#f7f7f7;/* border:1px solid #cccccc; */border-radius:5px;}
+.productService li a{ width:100%; height:90px; line-height:90px; text-align:center; display:inline-block; }
+.productService li a span{vertical-align:middle;color:#999999;}
+.productService li a em{font-style: normal;vertical-align:middle;color:#333333;}
+.productService li a i{vertical-align:middle; background:url("../../../img/client/right.png")no-repeat 18px 0px;width:18px; height:18px;display:inline-block;padding-left:20px;}
+.productService li.notOpen a i{background:url("../../../img/client/wran.png")no-repeat 18px 0px;}
+.active{color:#fff; font-size:14px; }
+/* .active span{display:none;} */
+.active em{display:none;}
+.active i{background:none;}
+.childAccount li{background:#e8efff;border:1px solid #e8efff;border-radius:5px;min-width:236px; height:86px; padding: 16px 0;}
+.childAccount li div label{display:inline-block;  min-width:60px; text-align:right;margin-right:4px;}
+.childAccount li div input{display:inline-block; border:none; box-shadow:none;background:#e8efff;font-weight:bold; min-width:160px;}
+.childAccount li div:nth-child(3n) input{color:#ff9933;}
+/*服务号*/
+.serviceNumber{min-width:1270px;padding:4px 0px 20px 26px;overflow:hidden;}
+.serviceNumber li{width:30.2%;  min-width: 442px; height:240px; float:left;/* background:#e8efff; */border-radius:5px; margin-left:16px;margin-top:16px;}
+.serviceNumber li div{min-width:400px;}
+.serviceNumber li.sms{background:#e8efff url("../../../img/client/SMS.png")no-repeat 86% 18px;}
+.serviceNumber li.flow{background:#e8efff url("../../../img/client/liuliang.png")no-repeat 86% 18px;}
+.serviceNumber li.ims{background:#e8efff url("../../../img/client/ims.png")no-repeat 86% 18px;}
+.serviceNumber li.mms{background:#e8efff url("../../../img/client/mms.png")no-repeat 86% 18px;}
+.serviceNumber li.voice{background:#e8efff url("../../../img/client/voice.png")no-repeat 86% 18px;}
+.serviceNumber li.join{background:#e8efff url("../../../img/client/join.png")no-repeat 86% 18px;}
+.serbox{margin-left:6%; margin-top:8%; position:relative;}
+.serviceNumber li .serbox label{display:inline-block;  width:100px; text-align:left;margin-right:4px;}
+.serviceNumber li .serbox input{display:inline-block; width:236px; border:none; box-shadow:none;background:none;}
+.moreChild,.bindService{position:absolute; top:10px; right:2.2%; text-decoration:underline !important;}
+#feedbackContent-error{top:80px;}
+.more{position:absolute; right:140px; top:90px;}
+.more:hover{text-decoration:underline; }
+.bdip{width:90px !important; display:inline-block !important; }
+.iptitle{width:500px; height:30px; line-height:30px;}
+.ipul{width:500px; margin-left:20px;}
+.ipul li{width:120px; display:inline-block;padding:10px;text-align:center;}
+
+.allwrap h2{background:#e0f0fc; border-bottom:none; }
+.account h2,.enterprise h2,.sendProfile h2{color:#ffffff;text-indent:54px;}
+.account h2{background:#98e27e url("../../../img/client/account.png")no-repeat 12px 2px;  }
+.enterprise h2{background:#6fa7fb url("../../../img/client/enterprise.png")no-repeat 12px 2px;; }
+.sendProfile h2{background:#f9ab4d url("../../../img/client/sendProfile.png")no-repeat 12px 2px;;}
+.comments{width:95%;overflow:auto;min-height:100px;border:none;resize:none}
+
+
+
+
+

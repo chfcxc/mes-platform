@@ -1,0 +1,38 @@
+#LicenseForm {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#LicenseForm .item .item-label {
+	width: 120px;
+}
+
+.pl35 {
+	padding-left: 26px;
+	font-size: 14px;
+}
+
+#clientName {
+	border: medium none;
+	left: 27px;
+	position: absolute;
+	top: 23px;
+	width: 160px;
+}
+
+#linkman, #mobile {
+	border: none;
+}
+
+.item label.error, .item label.valid, .item label.tip {
+	left: 119px;
+}
+
+#beginTime, #endTime {
+	width: 200px;
+}
+
+#product {
+	width: 212px;
+	height:30px;
+}

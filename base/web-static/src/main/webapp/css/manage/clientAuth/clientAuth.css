@@ -1,0 +1,134 @@
+.role_div {
+	width: 98%;
+	margin: 1%;
+}
+
+#addRoleForm {
+	padding: 10px 0;
+}
+
+#addRoleForm .item {
+	display: block;
+	margin: 5px 10;
+	height: 50px;
+}
+
+.role_auth {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0;
+}
+
+.role {
+	border: #e6e6e6 1px solid;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.role-title {
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.role-title i {
+	float: right;
+	margin-right: 10px;
+	*margin-top: -30px;
+	display: inline;
+	width: 0px;
+	height: 0px;
+	border: transparent 10px solid;
+	border-bottom-color: #1fb5ad;
+}
+
+.role-on i {
+	margin-top: 10px;
+	*margin-top: -19px;
+	border: transparent 10px solid;
+	border-top-color: #1fb5ad;
+}
+
+.roleNav label {
+	font-weight: bold;
+}
+
+.roleNav {
+	padding: 6px 0px 0px;
+}
+
+.roleNavFind {
+	padding: 6px 0 0;
+}
+
+.threebox .roleNavFind-cen {
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.roleNavFind, .roleNavFind-cen {
+	clear: both;
+	overflow: hidden;
+}
+
+.roleNavFind label {
+	margin: 5px;
+}
+
+#remark, #modifyremark {
+	height: 44px;
+	min-width: 400px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#remark {
+	resize: none;
+}
+
+.role-cen {
+	width: 99.9%;
+	border-top: 0;
+}
+
+.itemnew {
+	min-height: 44px;
+}
+
+#addroleName, #modifyroleName {
+	width: 400px !important;
+}
+
+#detailRoleForm input, #detailRoleForm textarea {
+	border: none;
+}
+
+#detailRoleForm .itemNew {
+	height: 20px;
+}
+/*******************2018109 bytangtang***********************/
+#role_div table, #modifyRoleForm table thead, #role_div table tbody
+	{
+	width: 100%;
+}
+
+.light_blue_bg {
+	background: #efefef;
+}
+
+#role_div table td {
+	border: 1px solid #e6e6e6;
+}
+
+.roleLeft, .leftDiv, .centerDiv, .rightDiv {
+	text-align: center;
+}
+.roleRight label{
+	display:inline-block;
+	margin:0 4px;
+}

@@ -1,0 +1,8 @@
+#userdetail{width:1000px;height:auto;  margin:0 auto; }
+.form_box{height:auto;}
+#userdetail input{width:400px;border:none; }
+#userdetail input,#userdetail label,#authinput{font-size:14px;}
+.authbox{height:auto !important; overflow:hidden;margin-left:16px;}
+ #authinput{width:400px; height:auto; overflow:hidden;border:none;} 
+#authinput span{padding:0px 10px; }
+#userdetail .item{height:30px;}

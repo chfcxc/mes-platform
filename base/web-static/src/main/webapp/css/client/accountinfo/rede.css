@@ -1,0 +1,86 @@
+/* .alert-cen>dt {
+	margin-top: 10px;
+	*margin-top: 10px;
+} */
+
+.alert-cen>dt label {
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	padding-right: 10px;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.alert-cen>dt textarea {
+	width: 300px;
+	height: 60px;
+	
+}
+
+#rechargeNumber-error, #deductionNumber-error,#changeBalance-error ,#allocationBalance-error{
+	width: 140px;
+}
+
+#remarksr-error, #remarksd-error {
+	top: 68px;
+	width: 200px;
+}
+
+.excelfile {
+	width: 400px;
+}
+
+.excelfile span {
+	display: inline-block;
+	margin: 30px 78px;
+	width: 220px;
+}
+
+.excelfile span a {
+	color: #4b6ba5;
+	font-weight: bold;
+}
+
+.lineLeft {
+	text-align: left !important;
+}
+
+.fixedbox {
+	min-height: 30px !important;
+	margin:0px !important;
+	
+}
+
+.fixedbox input {
+	border: none;
+	box-shadow:none !important;
+	width:200px;
+	display:inline-block;
+}
+#remarksr {
+	margin-bottom: -48px;
+}
+
+.context {
+	margin-bottom: 52px;
+}
+
+.w200 input {
+	width: 300px;
+}
+#sendMethod,#sendType{
+	width:174px;
+}
+.width98{
+	width:98px;
+}
+.sampleBox{width:330px; height:134px;background:url(../../../img/sampleimg.png)no-repeat 0px 34px;}
+.sampleBox span{color:red;}
+.namecnarea{height: 44px !important;
+    width: 300px;
+    border:none;
+    resize:none;
+    box-shadow:none;}
+ .nameitem label{margin-top:-22px !important;}

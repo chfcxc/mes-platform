@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       			    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://code.alibabatech.com/schema/dubbo
+	                    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    
+    <dubbo:application name="${local.name}" />
+    <dubbo:registry id="baseRegistry" address="${regist.base.address}" file="${catalina.home}/${regist.base.file}" />
+    
+    <!-- base-data-service dubbo api -->
+	<dubbo:reference id="userService"    interface="cn.emay.eucp.data.service.system.UserService" />
+	<dubbo:reference id="passportService"  interface="cn.emay.eucp.data.service.system.PassportService" />
+	<dubbo:reference id="resourceService"  interface="cn.emay.eucp.data.service.system.ResourceService" timeout="60000"/>
+</beans>

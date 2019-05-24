@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.header_left{
+	width:354px;
+	height:24px;
+	padding-top:34px;
+	}
+.home-box{
+	width:1170px;
+	margin:0 auto;
+	height:auto;
+	overflow:hidden;
+	}
+.module-content{
+	padding:30px 20px 50px;
+	}
+
+.module-right{
+	width:488px;
+	padding:10px;
+	border-top:1px solid #8b8b8b;
+
+	}
+.module-right ul li{
+	float:left;
+	padding:5px 10px;
+	width:102px;
+	}
+.module-right ul li a{
+	font-size:16px;
+	color:#555;
+	}
+.module-right ul li:hover a{
+	cursor:pointer;
+	text-decoration:underline;
+	color:#494848;
+	}
+.wrap{float:left; margin-left:40px;}
+.wrapA{width:488px;height:100px;position:relative;}
+.wrapA a{display:inline-block; height:100px;width:100px; background:url(../../../img/home-icon-bg-1.png) no-repeat center center;}
+.module-left{position:absolute; top:48px; left:108px; font-size:24px; }

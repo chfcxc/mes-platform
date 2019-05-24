@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       			    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://code.alibabatech.com/schema/dubbo
+	                    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	
+	<dubbo:application name="${local.name}" />
+	<dubbo:registry id="baseRegistry" address="${regist.base.address}"
+		file="${catalina.home}/${regist.base.file}" />
+		
+	<!-- base-data-service dubbo reference -->
+	<dubbo:reference id="enterpriseBindingSaleService"
+		interface="cn.emay.eucp.data.service.system.EnterpriseBindingSaleService" registry="baseRegistry"/>
+	<dubbo:reference id="manageUserOperLogService"
+		interface="cn.emay.eucp.data.service.system.ManageUserOperLogService"
+		timeout="60000" registry="baseRegistry"/>
+	<dubbo:reference id="userService"
+		interface="cn.emay.eucp.data.service.system.UserService" registry="baseRegistry"/>
+	<dubbo:reference id="enterpriseService"
+		interface="cn.emay.eucp.data.service.system.EnterpriseService"
+		timeout="60000" registry="baseRegistry" />
+	<dubbo:reference id="enterpriseAuthService"
+		interface="cn.emay.eucp.data.service.system.EnterpriseAuthService"
+		timeout="60000" registry="baseRegistry" />
+	<dubbo:reference id="passportService"
+		interface="cn.emay.eucp.data.service.system.PassportService" registry="baseRegistry"/>
+	<dubbo:reference id="exportService"  interface="cn.emay.eucp.data.service.system.ExportService"  registry="baseRegistry"/>
+	<dubbo:reference id="updateInfoService"   interface="cn.emay.eucp.data.service.system.UpdateInfoService" registry="baseRegistry"/>
+    <dubbo:reference id="foaService"  interface="cn.emay.eucp.data.service.system.FoaService" registry="baseRegistry"/>
+	<dubbo:reference id="authInterceptorService"
+        interface="cn.emay.eucp.data.service.system.AuthInterceptorService" timeout="60000" registry="baseRegistry"/>
+    <dubbo:reference id="resourceService"
+        interface="cn.emay.eucp.data.service.system.ResourceService" timeout="60000" registry="baseRegistry"/>
+</beans>
+

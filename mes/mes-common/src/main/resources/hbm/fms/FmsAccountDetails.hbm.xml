@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsAccountDetails" table="fms_account_details">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="enterpriseId" column="enterprise_id" type="long" />
+		<property name="serviceCodeId" column="service_code_id" type="long" />
+		<property name="appId" column="app_id" type="string" />
+		<property name="changeNumber" column="change_number" type="long" />
+		<property name="remainingNumber" column="remaining_number" type="long" />
+		<property name="operationType" column="operation_type" type="int" />
+		<property name="remark" column="remark" type="string" />
+		<property name="userId" column="user_id" type="long" />
+		<property name="operationTime" column="operation_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<assembly>
+	<id>assembly</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>${project.basedir}/bin</directory>
+			<outputDirectory></outputDirectory>
+			<fileMode>0755</fileMode>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/src/main/resources</directory>
+			<outputDirectory>conf</outputDirectory>
+			<fileMode>0644</fileMode>
+			<excludes>
+				<exclude>assembly-tar.xml</exclude>
+				<exclude>assembly-fat-jar.xml</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}</directory>
+			<outputDirectory>lib</outputDirectory>
+			<fileMode>0644</fileMode>
+			<includes>
+				<include>${project.artifactId}-${project.version}-assembly.jar</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

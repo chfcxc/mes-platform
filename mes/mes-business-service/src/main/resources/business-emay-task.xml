@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task-scheduling>
+<!-- 基础数据加载 -->
+    <task>
+        <name>基础数据更新 任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.CacheBaseDataTask</class>
+        <force-period>1m</force-period>
+    </task>
+	<task>
+        <name>页面发送文件解析任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.PageSendFileParsingTask</class>
+        <concurrent min="1" max="8" ds="5s" />
+    </task>
+    <task>
+        <name>页面发送任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.PageSendTask</class>
+        <concurrent min="1" max="8" ds="5s" />
+    </task>
+    <task>
+        <name>发送调度任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.SchedulingFmsTask</class>
+    </task>
+    <task>
+        <name>模板入库任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.SaveTemplateTask</class>
+    </task>
+    <task>
+        <name>报备模板任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.TemplateReportTask</class>
+    </task>
+    <task>
+        <name>模板报备结果更新任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.UpdateTemplateTask</class>
+    </task>
+    <task>
+        <name>更新模板-服务号关联表中的审核状态任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.UpdateAuditStateTask</class>
+        <force-period>1m</force-period>
+    </task>
+     <task>
+        <name>服务号消费统计</name>
+        <class>cn.emay.eucp.task.multiple.fms.ServiceCodeConsumptionReportTask</class>
+       <cron expression="0 0 1 * * ?" max="1"></cron>
+    </task>
+     <task>
+        <name>内容类型统计</name>
+        <class>cn.emay.eucp.task.multiple.fms.ContentTypeReportTask</class>
+       <cron expression="0 0 1 * * ?" max="1"></cron>
+    </task> 
+     <task>
+        <name>策略任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.MessageStrategyTask</class>
+         <concurrent min="1" max="8" ds="5s" />
+    </task>
+    <task>
+    	<name>重跑任务</name>
+    	<class>cn.emay.eucp.task.multiple.fms.RerunReportTask</class>
+    </task>
+    <task>
+        <name>闪信入库任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.SaveFmsInDbTask</class>
+         <concurrent min="1" max="8" ds="5s" />
+    </task>
+    <task>
+        <name>闪信更新任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.UpdateFmsInDbTask</class>
+    </task>
+      <task>
+        <name>余额更新任务</name>
+        <class>cn.emay.eucp.task.multiple.fms.ServiceCodeBalanceUpdateTask</class>
+    </task>
+    
+</task-scheduling>

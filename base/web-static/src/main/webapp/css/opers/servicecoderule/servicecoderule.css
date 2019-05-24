@@ -1,0 +1,7 @@
+.basebox{width:500px; margin:30px auto; }
+.basebox .item select{width:212px;}
+.basebox .item .item-label {  width: 100px;  text-align:right; }
+.basebox .item {margin-left:64px;}
+#baseForm{margin-left:44px;}
+#baseForm input{width:140px;}
+#baseForm select{width:152px;}

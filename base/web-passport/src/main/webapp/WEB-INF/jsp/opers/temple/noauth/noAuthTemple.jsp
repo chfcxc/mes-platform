@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="temple" uri="/temple"%>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<c:set var="WEB_STATIC_PATH" value="${pageContext.request.contextPath}"></c:set>
+	<script type="text/javascript">
+		var WEB_SERVER_PATH = '${WEB_SERVER_PATH}';
+		var WEB_STATIC_PATH = '${WEB_STATIC_PATH}';
+	</script>
+	
+	<link type="image/x-icon" rel="shortcut icon" href="${WEB_STATIC_PATH}/img/opers/favicon.ico">
+	<link type="image/x-icon" rel="bookmark" href="${WEB_STATIC_PATH}/img/opers/favicon.ico">
+	<link type="image/x-icon" rel="icon" href="${WEB_STATIC_PATH}/img/opers/favicon.ico">
+	<link type="text/css" href="${WEB_STATIC_PATH}/css/opers/common.css" rel="stylesheet" />
+	<link type="text/css" href="${WEB_STATIC_PATH}/css/opers/noauthtemple.css" rel="stylesheet" />
+	<link type="text/css" href="${WEB_STATIC_PATH}/css/opers/validate.css" rel="stylesheet" />
+	<script type="text/javascript" src="${WEB_STATIC_PATH}/lib/jquery/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="${WEB_STATIC_PATH}/lib/cookie/jquery.cookie.js"></script>
+	
+	<temple:block property="head" />
+	
+	<title>${CURRENT_PAGE_NAME == null ? 'EUCP' : CURRENT_PAGE_NAME}</title>
+</head>
+<body>
+    <div class="login_header">
+        <div class="login_main">亿美 · 统一通信平台 · 运维系统</div>
+    </div>
+    <div class="login_center">
+	   <temple:block property="context" />
+        <div class="clear"></div>
+    </div>
+    <div class="login_footer">
+    	<p>Copyright©北京亿美软通科技有限公司</p>
+    </div>
+   	<script type="text/javascript">
+	   	$(function(){
+	   		$(".login_center").height($(window).height()-$(".login_header").height()-$(".login_footer").height());
+	   	});
+	</script>
+</body>
+</html>

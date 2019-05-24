@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsChannel" table="fms_channel">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="channelName" column="channel_name" type="string" />
+		<property name="channelNumber" column="channel_number" type="string" />
+		<property name="sendSpeed" column="send_speed" type="int" />
+		<property name="templateType" column="template_type" type="string" />
+		<property name="businessTypeId" column="business_type_id" type="long" />
+		<property name="providers" column="providers" type="string" />
+		<property name="cmccLimit" column="cmcc_limit" type="int" />
+		<property name="cuccLimit" column="cucc_limit" type="int" />
+		<property name="ctccLimit" column="ctcc_limit" type="int" />
+		<property name="isNeedReport" column="is_need_report" type="int" />
+		<property name="reportType" column="report_type" type="int" />
+		<property name="state" column="state" type="int" />
+		<property name="userId" column="user_id" type="long" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

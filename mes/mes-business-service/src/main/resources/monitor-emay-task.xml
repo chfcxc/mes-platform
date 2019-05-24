@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task-scheduling>
+
+	<task>
+		<name>中心注册与命令接收任务</name>
+		<class>cn.emay.task.plugin.center.RegistTask</class>
+		<force-period>10s</force-period>
+		<params>
+			<center.regist.address>http://127.0.0.1:8080/operssms/sms/task/regist</center.regist.address>
+		</params>
+		<start-on-boot>false</start-on-boot>
+	</task>
+	
+	<task>
+		<name>中心命令执行任务</name>
+		<class>cn.emay.task.plugin.center.CommandTask</class>
+		<force-period>5s</force-period>
+		<start-on-boot>false</start-on-boot>
+	</task>
+	
+</task-scheduling>

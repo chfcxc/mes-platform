@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+/*login*/
+.login_bg {
+	background: #0183e1;
+}
+.login_header {
+	width: 100%;
+	height: 80px;
+}
+.login_main {
+	width: 1190px;
+	margin: 0 auto;
+	height: 80px;
+	background: url(../../img/client/logoblue.png) no-repeat 34px 30px;
+	position:relative;
+	
+}
+.login_main span{
+	font-size: 18px;
+    font-weight: 500;
+    left: 90px;
+    position: absolute;
+    top: 44px;
+    }
+.login_center {
+	width: 1190px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.login_footer {
+	background: #fff;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border-top:1px solid #ededed;
+}
+.login_footer {
+	text-align: center;
+	font-size: 14px;
+	color: #94939d;
+}
+.login_left {
+	width: 691px;
+}
+.login_left img {
+	width:600px;
+}
+.divleft label {
+	width: 50px;
+	text-align: right;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	padding-right: 10px;
+	font-size: 14px;
+}
+.captchadiv input {
+	width: 80px;
+}
+.login_right {
+	width: 340px;
+	height: 375px;
+	margin-left: 120px;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	background-color:rgba(77,140,247,0.25);
+	box-shadow:0px 30px 8px -8.8px rgba(4, 0, 0, 0.03);
+	-moz-box-shadow: 0px 30px 8px -8.8px rgba(4, 0, 0, 0.03);
+    -webkit-box-shadow: 0px 30px 8px -8.8px rgba(4, 0, 0, 0.03); /* X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色 */
+}
+.divleft {
+	display: block;
+	width: 250px;
+	height: 36px;
+	margin:30px auto;
+}
+.divleft input {
+	float:left;
+	width: 240px;
+	height: 38px;
+	line-height: 44px;
+	padding-left: 10px;
+	font-size: 16px;
+	border:none;
+	background-color:transparent;
+	border-bottom:2px solid #fff;
+	box-shadow:none;
+	transition:none;
+	color:#fff;
+	padding-right:0;
+}
+
+.captchadiv input {
+	background: url(../../img/client/login_icon.png) no-repeat;
+}
+.divleft input:focus  {
+	border-bottom:2px solid #fff;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+   -moz-box-shadow:none;
+   -o-box-shadow:none;
+   background-color:transparent;
+}
+.divleft #captcha {
+	background: url(../../img/client/login_icon.png) no-repeat;
+	width:86px;
+	background-position:2px center;
+}
+.login-center{
+	padding-bottom:20px;
+	
+}
+.login-center h2 {
+	text-indent:0.5em;
+	font-size: 18px;
+	color: #5f5e5e;
+	padding:20px 20px 4px;
+	font-weight: normal;
+}
+.login_line {
+	width: 340px;
+	height: 1px;
+	border-bottom:2px solid #0099ff;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.captchadiv input {
+	width: 170px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 24px;
+	padding-right:0;
+}
+.captchadiv .mycaptchaimg {
+	width: 130px;
+	height: 39px;
+	float: right;
+	display: inline;
+}
+
+.mycaptchaimg:hover {
+	cursor: pointer;
+}
+.login-center .logbtn {
+	background: -webkit-linear-gradient(left bottom,#feb526,#ff925b);
+	background: -o-linear-gradient(left bottom,#feb526,#ff925b);
+	background: -mos-linear-gradient(left bottom,#feb526,#ff925b);
+	background: -moz-linear-gradient(left bottom,#feb526,#ff925b);
+	background: linear-gradient(left bottom,#feb526,#ff925b);
+    color: #ffffff;
+    font-size: 18px;
+    height: 42px;
+    width: 260px;
+    font-weight:600;
+}
+.login-center .logbtn:hover {
+	background-color: #fd9e0b;
+	border-color: #ffa519;
+}
+.div-pass {
+	padding: 0 3px;
+	margin-top: 15px;
+}
+.div-pass a {
+	float: right;
+}
+.errorsdiv {
+	height: 20px;
+	margin-top: 6px;
+	background: none;
+	margin-left: 30px;
+	color: red;
+}
+.btnDiv {
+	width: 260px;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+.download{
+	padding:15px 0px 0px 41px;
+	height:16px;
+	line-height:16px;
+}
+.download img{
+	vertical-align:middle;
+	width:16px;
+	height:16px;
+}
+.download a{
+	font-size:12px;
+	text-decoration:underline;
+	color:#fff;
+}
+.download a:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+.captchadiv{
+	margin-bottom:0;
+}
+input::-webkit-input-placeholder{
+  color: #fff;
+  font-size: 16px;
+}
+
+input:-moz-placeholder{
+  color: #fff;
+  font-size: 16px;
+}
+
+input::-o-placeholder{
+  color: #fff;
+  font-size: 16px;
+}
+input::-ms-placeholder{
+  color: #fff;
+  font-size: 16px;
+}
+input:-ms-input-placeholder{
+  color: #fff;
+  font-size: 16px;
+}

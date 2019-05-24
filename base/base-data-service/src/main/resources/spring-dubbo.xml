@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<dubbo:provider timeout="6000" retries="0" />
+	
+	<dubbo:application name="${local.name}" />
+	<dubbo:registry address="${regist.base.address}" file="${regist.base.file}"/>
+	<dubbo:protocol name="dubbo" port="${local.port}" />
+
+	<dubbo:service ref="enterpriseBindingSaleService"
+		interface="cn.emay.eucp.data.service.system.EnterpriseBindingSaleService" />
+	<dubbo:service ref="exportService"
+		interface="cn.emay.eucp.data.service.system.ExportService" />
+	<dubbo:service ref="feedbackService"
+		interface="cn.emay.eucp.data.service.system.FeedbackService" />
+	<dubbo:service ref="systemSettingService"
+		interface="cn.emay.eucp.data.service.system.SystemSettingService" />
+	<dubbo:service ref="baseSectionNumberService"
+		interface="cn.emay.eucp.data.service.system.BaseSectionNumberService" />
+	<dubbo:service ref="portableNumberService"
+		interface="cn.emay.eucp.data.service.system.PortableNumberService"
+		timeout="60000" />
+	<dubbo:service ref="departmentService"
+		interface="cn.emay.eucp.data.service.system.DepartmentService" />
+	<dubbo:service ref="enterpriseService"
+		interface="cn.emay.eucp.data.service.system.EnterpriseService" />
+	<dubbo:service ref="manageUserOperLogService"
+		interface="cn.emay.eucp.data.service.system.ManageUserOperLogService"
+		timeout="60000" retries="0" />
+	<dubbo:service ref="resourceService"
+		interface="cn.emay.eucp.data.service.system.ResourceService" />
+	<dubbo:service ref="roleResourceAssignService"
+		interface="cn.emay.eucp.data.service.system.RoleResourceAssignService" />
+	<dubbo:service ref="roleService"
+		interface="cn.emay.eucp.data.service.system.RoleService" />
+	<dubbo:service ref="clientUserOperLogService"
+		interface="cn.emay.eucp.data.service.system.ClientUserOperLogService" />
+	<dubbo:service ref="sectionNumberService"
+		interface="cn.emay.eucp.data.service.system.SectionNumberService"
+		timeout="60000" />
+	<dubbo:service ref="userDepartmentAssignService"
+		interface="cn.emay.eucp.data.service.system.UserDepartmentAssignService" />
+	<dubbo:service ref="userRoleAssignService"
+		interface="cn.emay.eucp.data.service.system.UserRoleAssignService" />
+	<dubbo:service ref="userService"
+		interface="cn.emay.eucp.data.service.system.UserService" />
+	<dubbo:service ref="licenseService"
+		interface="cn.emay.eucp.data.service.system.LicenseService" />
+	<dubbo:service ref="baseExcelReaderService"
+		interface="cn.emay.eucp.data.service.system.ExcelReaderService" />
+	<dubbo:service ref="passportService"
+		interface="cn.emay.eucp.data.service.system.PassportService" />
+	<dubbo:service ref="enterpriseAuthService"
+		interface="cn.emay.eucp.data.service.system.EnterpriseAuthService" />
+	<dubbo:service ref="updateInfoService"
+		interface="cn.emay.eucp.data.service.system.UpdateInfoService" />
+	<dubbo:service ref="foaService"
+		interface="cn.emay.eucp.data.service.system.FoaService" />
+	<dubbo:service ref="authLevelBindNameService"
+		interface="cn.emay.eucp.data.service.system.AuthLevelBindNameService" />
+	<dubbo:service ref="businessService"
+		interface="cn.emay.eucp.data.service.system.BusinessService" timeout="60000" />
+	<dubbo:service ref="authInterceptorService"
+		interface="cn.emay.eucp.data.service.system.AuthInterceptorService"/>
+	<dubbo:service ref="industryService"
+		interface="cn.emay.eucp.data.service.system.IndustryService"/>
+	<dubbo:service ref="contactGroupService"
+		interface="cn.emay.eucp.data.service.system.ContactGroupService"/>
+	<dubbo:service ref="contactService"
+		interface="cn.emay.eucp.data.service.system.ContactService"/>
+	<dubbo:service ref="contactGroupAssignService"
+		interface="cn.emay.eucp.data.service.system.ContactGroupAssignService"/>
+</beans>

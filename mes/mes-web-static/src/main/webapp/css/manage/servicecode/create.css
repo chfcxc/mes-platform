@@ -1,0 +1,701 @@
+.item .item-label {
+	width: 126px !important;
+}
+
+.remark {
+	width: 300px;
+	height: 60px;
+	resize:none;
+}
+
+.mp20 {
+	margin-top: 20px;
+	min-height: auto;
+}
+
+.form_box .item {
+	width: 74%;
+}
+
+#codeType, #codeSize {
+	width: 210px;
+}
+
+.kong .chooseCustomer {
+	position: absolute;
+	left: 350px;
+}
+
+.kong {
+	height: 32px;
+	margin-bottom: 12px;
+}
+
+#serviceCode_box_selected {
+	display: none;
+}
+
+#clientName {
+	width: 160px;
+	position: absolute;
+	left: 47px;
+	top: 76px;
+	border: none;
+}
+
+.rule_div {
+	width: 98%;
+	margin: 1%;
+}
+
+.rule_title {
+	color: #666;
+	cursor: pointer;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+
+.celue {
+	width: 98%;
+	margin: 10px auto;
+	border: 1px solid #def0fb;
+	position: relative;
+}
+
+.celue label {
+	font-size: 15px;
+	display: block;
+	/* padding: 10px 2%; */
+	font-weight: bold;
+}
+
+.itemnew {
+	min-height: 44px;
+}
+
+#fullForm4 .item {
+	display: block;
+	margin: 5px 0;
+}
+
+.time {
+	width: 87%;
+	padding: 10px 2%;
+	float: left;
+}
+
+.time select {
+	width: 20%;
+}
+
+.imgs, .imgss, .addImgs, .addImgsTwo, .unsub_imgs, .mobileImg, .emailImg
+	{
+	width: 20px;
+	height: 20px;
+	background: url("../../../img/manage/adduser.png") no-repeat;
+	display: inline-block;
+	margin-left: -6px;
+	cursor:pointer;
+}
+
+.imgss {
+	margin-left: -2px;
+}
+
+.remave, .remaves, .remaveImgs, .remaveImgsTwo, .unsub_remave,
+	.mobileRemave, .emailRemave {
+	width: 20px;
+	height: 20px;
+	background: url("../../../img/manage/remave.png") no-repeat;
+	display: inline-block;
+	margin-left: 6px;
+	cursor:pointer;
+}
+
+.temple_content {
+	background: #f2f9fd none repeat scroll 0 0;
+	border-radius: 5px;
+	padding: 10px;
+	width: 86%;
+	margin-left: 2%;
+}
+
+.temple_content label {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	width: 200px;
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 40px;
+}
+
+.temple_list h2 {
+	height: 40px;
+	line-height: 64px;
+	font-size: 15px;
+	margin-top: 10px;
+	font-weight: normal;
+}
+
+.title {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.admo, .unsubInput {
+	margin: 0% 2% 2% 0%;
+}
+
+.emtable_table_table select {
+	width: 150px;
+}
+
+#extendFlagSize {
+	width: 70px;
+}
+
+.emtable_table_table input {
+	width: 180px;
+}
+
+.emtable_table_table .tem_up, .emtable_table_table .tem_down,
+	.emtable_table_table .tem_up_g, .emtable_table_table .tem_down_g {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.emtable_table_table .tem_up {
+	background: url(../../../img/priority_icon.png) no-repeat;
+}
+
+.emtable_table_table .tem_down {
+	background: url(../../../img/priority_icon.png) no-repeat 0 -20px;
+}
+
+.emtable_table_table .tem_up_g {
+	background: url(../../../img/priority_icon.png) no-repeat 0 -40px;
+}
+
+.emtable_table_table .tem_down_g {
+	background: url(../../../img/priority_icon.png) no-repeat 0 -60px;
+}
+
+.emtable_table_table span {
+	display: inline-block;
+	width: 24px;
+}
+
+.temple_list {
+	width: 88%;
+	float: left;
+	margin-left: 2%;
+	padding-right: 14px;
+}
+
+#special, #extended {
+	width: 87%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.toupdate {
+	float: left;
+	margin-top: 4px;
+}
+
+.tipBtn {
+	background: #629fe2 !important;
+	border: medium none !important;
+	border-radius: 5px !important;
+	height: 30px !important;
+	line-height: 20px !important;
+	margin-right: 14px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	color: #fff !important;
+}
+
+.radiobox {
+	width: 200px;
+	position: absolute;
+	left: 13%;
+	top: 8px;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: middle;
+}
+
+.radiobox input {
+	width: 24px;
+	margin-left: 6px;
+	box-shadow: none !important;
+}
+
+.intelligence {
+	width: 87%;
+	padding: 10px 2%;
+	float: left;
+	display: none;
+}
+
+.intelligence select {
+	width: 140px;
+}
+
+.onOff, .statusReport {
+	transition: all 0.3s linear 0s;
+	height: 20px;
+	width: 34px;
+	border: 1px solid #5aa1e4;
+	position: absolute;
+	top: 18px;
+	left: 118px;
+	border-radius: 16px;
+	background: #69b0f3;
+	cursor: pointer;
+}
+
+.onOff i, .statusReport i {
+	transition: all 0.3s linear 0s;
+	height: 18px;
+	width: 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.role-gray {
+	background: none;
+	border: 1px solid #ccc;
+}
+
+.role-gray i {
+	right: 12px
+}
+
+.warncon {
+	padding: 4px 0 0 0;
+}
+
+.warncon span {
+	display: inline-block;
+	width: 84px;
+	text-align: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+#warnuser .mobileBox {
+	margin-left: 4px;
+}
+
+.tip {
+	height: 34px;
+	line-height: 34px;
+	text-indent: 7em;
+}
+
+.warnti input {
+	width: 130px;
+}
+
+.warnti textarea {
+	width: 540px;
+}
+
+#requestTime input {
+	width: 40px;
+}
+
+#priority {
+	width: 171px;
+}
+
+.newtime {
+	width: 17%;
+	padding: 10px 0 10px 2%;
+}
+
+.priorty-tip {
+	float: left;
+	width: 72%;
+	height: 33px;
+	line-height: 33px;
+	padding: 10px 0;
+	color: red;
+}
+
+#bei_cmcclist option, #zh_cmcclist option {
+	width: 120px;
+}
+
+.geng1, .geng2, .geng3, .geng4, .geng5, .geng6, .geng7, .geng8, .geng9,
+	.geng04, .geng041, .geng042 {
+	position: absolute;
+	bottom: 10px;
+	right: 1%;
+}
+
+.minute_new, .number_new {
+	width: 40px;
+}
+
+#pei_z, #unsubscribeCode {
+	width: 770px;
+	padding-left: 80px;
+	margin-right: 38px;
+}
+
+#pei_z input, #unsubscribeCode input {
+	width: 98px;
+}
+
+#auditNumber, #priority, #balanceWarning, #balanceFrequency,
+	#balanceWarnningNum {
+	width: 60px;
+}
+
+#warnuser .person {
+	position: absolute;
+	top: 244px;
+}
+
+.mobiles, .emails {
+	display: inline;
+	float: left;
+}
+
+.mobileBoxNull {
+	width: 76px;
+	display: inline-block;
+}
+
+.mobileBox, .emailsBox {
+	width: 760px;
+	display: inline-block;
+}
+
+.nums {
+	padding-bottom: 16px;
+}
+
+.onoffbox {
+	margin-left: -12px;
+}
+
+.only {
+	margin-left: -8px;
+	margin-right: 8px;
+}
+
+#warnuser input, #receiveMobiles input, #receiveEmails input {
+	width: 98px;
+}
+
+/*鐠囷附鍎�*/
+#serverbox {
+	width: 996px;
+	border: none;
+}
+
+#serverbox .channlbox {
+	width: 500px;
+	height: 35px;
+	margin-left: 92px;
+}
+
+#serverbox .item {
+	min-height: 28px;
+}
+
+.channlbox label, .channlbox input {
+	display: inline-block;
+	float: left;
+}
+
+#serverbox input {
+	border: none;
+	box-shadow: none;
+	width: 300px;
+}
+
+#serverbox .tipFoot {
+	text-align: center;
+}
+
+.check {
+	border: none !important;
+	box-shadow: none !important;
+	background: none;
+}
+
+.time input {
+	box-shadow: none !important;
+	background: none;
+}
+
+.h80 {
+	height: 90px;
+}
+/*20161215*/
+.createForm {
+	width: 906px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#fullForm .tipFoot {
+	margin-bottom: 20px;
+}
+
+#isGiveCodeBox, #isTestBox {
+	/* height: 32px !important; */
+	
+}
+
+.form_box .item:first-child {
+	margin-top: 20px;
+}
+
+.item label.error, .item label.valid, .item label.tip {
+	left: 114px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.succbox {
+	width: 482px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+
+.serboxt {
+	width: 524px;
+	max-height: 260px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+.serboxt li {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	width: 50px;
+	padding: 0px 10px;
+}
+
+.butbox {
+	width: 524px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#fullForm select {
+	height: 30px;
+}
+
+#serviceCode_box {
+	margin-top: -16px;
+}
+
+.channelWrap {
+	margin-bottom: 14px;
+}
+
+.channelWrap, .channelWrap tr, .channelWrap td {
+	border: 1px solid #def0fb;
+}
+
+.titleWrap {
+	text-align: center;
+}
+
+.channelBox {
+	width: 100%;
+	/* height: 46px;
+	line-height: 46px; */
+}
+
+.channelBoxOne {
+	width: 16%;
+	text-align: center;
+	margin-left: 14%;
+}
+
+.channelBoxTwo {
+	width: 60%;
+}
+
+.channelBoxTwo select {
+	width: 305px;
+	margin-left: 10px;
+}
+
+.channelBoxTwo .cbTwo {
+	width: 120px;
+}
+
+.channelBoxTwo span {
+	margin-left: 10px;
+}
+
+/*婢х偛濮炵紒鍕摜閻ｏ拷*/
+.addgroups {
+	height: 40px;
+	line-height: 40px;
+}
+
+.defaultPolicy, .openVoiceService {
+	width: 90%;
+	margin: 1% 0 1% 2%;
+}
+
+.customPolicy {
+	width: 90%;
+	margin: 1% 0 1% 2%;
+}
+
+.defaultPolicy label, .customPolicy label, .openVoiceService label {
+	display: inline-block;
+	font-size: 12px !important;
+	line-height: 20px;
+	font-weight: normal;
+	padding: 10px 3%;
+}
+
+.del {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	border: 1px solid red;
+	color: red;
+	border-radius: 7px;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 6px;
+}
+
+.customGroupBox {
+	width: 506px;
+}
+
+.backBox h2, .backwordsBox h2 {
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+
+.backBoxlist, .backwordsBoxlist {
+	height: auto;
+}
+
+.backBoxlist label, .backwordsBoxlist label {
+	display: inline-block;
+	font-size: 12px !important;
+	line-height: 20px;
+	font-weight: normal;
+	padding: 10px 3%;
+}
+/*add 閹恒劑锟斤拷*/
+.batch_title {
+	padding: 10px 0 10px 2%;
+}
+
+.celuePush label {
+	display: inline-block;
+	padding: 10px 2% 0;
+}
+
+.batch_title input[type="checkbox"] {
+	height: auto;
+	margin-top: -4px;
+}
+
+#isNeedReport input[type='text'], #isNeedMo input[type='text'],
+	#isVoiceNeedReport input[type='text'] {
+	width: 300px;
+}
+
+.isPushContent input[type='radio'] {
+	height: 34px;
+	line-height: 34px;
+}
+
+#pushencryptBox {
+	display: none;
+}
+
+#pushencryptBox label {
+	padding: 0 0 0 10px;
+}
+
+.isPushContent .time {
+	padding: 10px 2% 0px;
+}
+
+.isNeedChannelNum label {
+	padding: 10px 3% 0 12px;
+}
+
+.channelWrap {
+	width: 100%;
+}
+/*閻樿埖锟戒焦濮ら崨濠囧櫢閹猴拷*/
+.statusReport {
+	left: 150px;
+}
+/*妞ょ敻娼伴崣鎴︼拷浣割吀閺嶆悂妾洪崚锟�*/
+.mr30 {
+	margin-right: 30px;
+	display: inline-block;
+}
+
+.testBtn {
+	display: inline-block;
+}
+
+.smsReportPushBox, .smsMoPushBox, .voiceReportPushBox {
+	display: none;
+	margin-left: 30px;
+}
+
+.adjust {
+	width: 90px !important;
+}
+
+#adjustReason {
+	width: 248px;
+	height: 64px;
+}
+
+#adjustReason-error {
+	left: 96px;
+	top: 80px;
+}
+
+#agentPlatCodeWrap {
+	display: none;
+}
+#agentPlatCodeWrap-error{
+	left:114px;
+}
+.agentAbbr_btn{
+	margin-left:20px !important;
+}

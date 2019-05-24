@@ -1,0 +1,117 @@
+/*选择联系人*/
+#seeNoBlingsDetails table tr:hover, #seeAllBlingsDetails table tr:hover
+	{
+	cursor: pointer;
+}
+.bindTrBg {
+	background: #ccc;
+}
+
+.onGreen {
+	background: #459DF5;
+	color: #fff;
+}
+
+.ofh ul li:hover {
+	cursor: pointer;
+}
+
+.ofh ul li {
+	text-align: left;
+	padding: 4px;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+.choci-box {
+	width: 150px;
+	float: left;
+	margin-left: 58px;
+}
+
+.choice-top {
+	width: 150px;
+	height: 32px;
+}
+
+.choice-left {
+	width: 150px;
+	height: 220px;
+	display: block;
+	margin-top: 10px;
+	overflow: auto;
+	border: #ccc 1px solid;
+}
+
+.choice-right {
+	width: 150px;
+	float: right;
+	height: 220px;
+	overflow: auto;
+	border: #ccc 1px solid;
+	margin-right: 44px;
+	margin-top: 42px;
+}
+
+.choice-sclctedxin input {
+	width: 81px;
+	padding-right: 64px;
+	height: 30px;
+}
+
+.searchBoxImglxr {
+	position: absolute;
+	top: 55px;
+	left: 194px;
+	width: 32px;
+	height: 31px;
+	background: url(../../../../img/nav-icon.png) no-repeat 0px -440px;
+	z-index: 999;
+}
+
+.searchBoxImglxr:hover {
+	cursor: pointer;
+}
+
+.choice-title {
+	background: #e4e4e4;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.choice-center {
+	float: left;
+	width: 22px;
+	margin-top: 108px;
+	margin-left: 8px;
+}
+
+.choice-center span {
+	display: block;
+	margin: 10px 0;
+}
+
+.choice-center span a {
+	color: #4b6b8b;
+	text-decoration: none;
+}
+.nodata{
+	display:inline-block;
+	padding-top:20px;
+	width:100%;
+	text-align:center;
+}
+.width99{
+	width:99.8%;
+}
+.tipFootMt30{
+	margin-top:30px;
+}
+.blue {
+  background: -moz-linear-gradient( top, #0183e1, #629fe2);
+	background: -ms-linear-gradient( top, #0183e1, #629fe2);
+	background: -o-linear-gradient( top, #0183e1, #629fe2);
+	background: -webkit-linear-gradient( top, #0183e1, #629fe2);
+    color: #fff;
+    margin-left: 10px;
+}

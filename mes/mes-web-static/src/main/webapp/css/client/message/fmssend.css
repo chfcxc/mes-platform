@@ -1,0 +1,85 @@
+.textarea-box {
+	margin-top: 33px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.sms-item textarea#bath-sendContent {
+	width: 98%;
+}
+.prelative-mobile {
+	position: relative;
+	height: 174px;
+}
+.sms-item .fielsBtn {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+.sms-item .fielsBtn a {
+	background: #03a9f3 none repeat scroll 0 0;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 10px;
+	padding: 4px 8px;
+}
+.sms-item label.lh100 {
+	line-height: 100px;
+}
+.empty_box {
+	position: absolute;
+	display: inline-block;
+	height: 20px;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: 20px;
+	right: 30px;
+	bottom: 34px;
+}
+.tips {
+	margin: 5px 0 0px 15%;
+	font-size: 14px;
+	height: 22px;
+	line-height: 22px;
+}
+.red {
+	color: #ff0000;
+	padding: 0 3px;
+}
+/*右侧--手机*/
+.sms-right {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/phone.png")
+		no-repeat scroll 0 0;
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	padding: 0px 0px 10px 0;
+	width: 260px;
+	height: 470px;
+	background-size: 260px 470px
+}
+
+.phone {
+	height: 290px;
+	margin: 90px auto auto;
+	width: 210px;
+}
+
+.phone-top {
+	height: 270px;
+	line-height: 170%;
+	overflow-y: auto;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.phone-bottom {
+	height: 50px;
+	line-height: 25px;
+	text-align: center;
+}

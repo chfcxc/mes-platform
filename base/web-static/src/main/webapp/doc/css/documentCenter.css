@@ -1,0 +1,586 @@
+@charset "utf-8";
+/* CSS Document */
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+/* .dc_banner {
+	width: 100%;
+	 height: 320px;
+	height:250px;
+} */
+.dc_banner {
+	width: 100%;
+	height:200px;
+	position: relative;
+    top: 64px;
+}
+
+.dc_banner img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+/* .container {
+	margin-top: 30px;
+	width: 100%;
+} */
+.container {
+    margin-top: 30px;
+    width: 100%;
+    top: 60px;
+    position: relative;
+}
+.documentCenter {
+	margin: 0 auto;
+	overflow: hidden;
+	/* width: 1380px; */
+	width:1100px;
+}
+
+.dc_left {
+	width: 240px;
+	overflow: hidden;
+}
+
+.dc_title {
+	background: #004ea2 url(../img/home.png) no-repeat 44px 16px;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	font-size: 16px;
+	color: #ffffff;
+	letter-spacing: 1.5px;
+}
+
+.dc_left h2 a {
+	display: inline-block;
+	width: 240px;
+	height: 62px;
+	line-height: 59px;
+	border-top: 2px solid #ffffff;
+	font-size: 13px;
+	color: #675f5f;
+	background: #f7f7f7;
+	padding-left: 8px;
+}
+
+.dc_left h2 span {
+	display: inline-block;
+	width: 3px;
+	height: 18px;
+	margin-right: 6px;
+	margin-top: -3px;
+	vertical-align: middle;
+	background: #004ea2;
+}
+/* .dc_left h2 span,.dc_left h2 span.active{display:inline-block; width:14px; height:14px; margin-right:8px;vertical-align:middle; } */
+/* .dc_left h2 span{ background:url(../img/dc_img/icon-r.png)no-repeat;} */
+/* .dc_left h2.active span{background:url(../img/dc_img/icon-b.png)no-repeat; } */
+#sms .morelist ,#voice .morelist,#fms .morelist{
+	display: inline-block;
+	width: 240px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 24px;
+	font-family: "宋体";
+	font-size: 12px;
+	background: #f7f7f7 url(../img/dc_img/icon-r.png) no-repeat 7px 10px;
+}
+
+#sms .twoactive,#voice .twoactive,#fms .twoactive {
+	background: #f7f7f7 url(../img/dc_img/icon-b.png) no-repeat 7px 10px;
+	color: #004ea2;
+}
+
+#sms ul li a ,#voice ul li a,#fms ul li a {
+	padding-left: 38px;
+}
+
+.threeactive {
+	color: #004ea2;
+}
+
+.moreUl {
+	
+}
+
+.dc_left ul li a {
+	display: inline-block;
+	width: 240px;
+	height: 34px;
+	line-height: 34px;
+	background: #f7f7f7;
+	padding-left: 18px;
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+.dc_left ul li a:hover, .dc_left h2 a:hover {
+	cursor: pointer;
+	color: #004ea2;
+}
+
+.liactive a, .dc_left h2.active a {
+	color: #004ea2;
+}
+
+.dc_left ul {
+	display: none;
+}
+
+.hotline {
+	widht: 238px;
+	height: 160px;
+	margin-top: 60px;
+}
+
+.hotline .titL {
+	height: 30px;
+	line-height: 30px;
+	color: #2e2e2e;
+	font-family: "宋体";
+	font-size: 12px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.hotline .ym_phone {
+	border: 1px solid #c1c1c1;
+	height: 122px;
+	background: url(../img/dc_img/bg.png) no-repeat 0 60px;
+}
+
+.hotline .ym_phone div {
+	height: 60px;
+	line-height: 60px;
+	padding-left: 30px;
+}
+
+.hotline .ym_phone div img, .hotline .ym_phone div span {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.dc_right {
+	width: 820px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.headWrap, .secondWrap {
+	width: 100%;
+}
+
+.headWrap h2, .secondWrap h2 {
+	height: 62px;
+	line-height: 62px;
+	letter-spacing: 1.5px;
+	font-family: "微软雅黑";
+	color: #004ea2;
+}
+
+.headcontent, .secondcontent {
+	width: 100%;
+	border-bottom: 1px solid #999999;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.headcontent p, .secondcontent p {
+	color: #333333;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.headWrap h2 {
+	border-bottom: 1px solid #004ea2;
+	font-size: 16px;
+}
+
+.headWrap ul {
+	width: 820px;
+	margin: 60px auto;
+}
+
+.headWrap ul li {
+	width: 290px;
+	height: 66px;
+	background: #004ea2;
+	float: left;
+	margin: 0 14px 30px 80px;
+	border-radius: 33px;
+}
+
+.headWrap ul li a {
+	display: inline-block;
+	width: 290px;
+	height: 66px;
+	line-height: 66px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.headWrap ul li a:hover {
+	font-size: 15px;
+}
+
+.secondWrap h2 {
+	border-bottom: 1px solid #999999;
+	font-size: 14px;
+}
+
+.secondMethod {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #999999;
+}
+
+.secondMethod h4 {
+	font-size: 14px;
+	color: #333333;
+	font-family: "微软雅黑";
+	height: 34px;
+	line-height: 34px;
+}
+
+.secondMethodBox p {
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.secondMethodBox table {
+	border-collapse: collapse;
+	margin: 10px auto;
+	width: 100%;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.secondMethodBox tr td, .secondMethodBox tr th {
+	border-collapse: collapse;
+	border-left: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
+	text-align: left;
+	vertical-align: middle;
+	height: 30px;
+	line-height: 30px;
+	padding: 4px;
+}
+
+.secondMethodBox tr td span {
+	color: red;
+}
+
+.secondMethodBox thead {
+	background: #004da1;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.secondMethodBox ul {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	height: auto;
+	width: 100%;
+	font-size: 14px;
+	padding: 10px;
+	padding-left: 60px;
+}
+
+.secondMethodBox ul li pre {
+	color: #666666;
+	font-family: "Arial";
+}
+
+.widget {
+	width: 80px;
+	height: 40px;
+	background: #004ea2 url(../img/dc_img/top.png) no-repeat 46px 12px;
+	position: fixed;
+	bottom: 10px;
+	right: 0px;
+	z-index: 999999;
+	display: none;
+}
+
+.widget a {
+	color: #ffffff;
+	font-size: 12px;
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 1.5em;
+}
+
+.urlbox {
+	width: 816px;
+	word-break: break-all;
+	height: auto;
+}
+
+.footer {
+	height: 60px !important;
+	/* position: relative; */
+	
+	position: fixed;
+    bottom: 0px;
+    width:100%;
+}
+
+.footerp {
+	color: #999;
+	font-size: 12px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+/**文档模块划分**/
+.docBox h2.mainH2 {
+	color: #0f1830;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+h2 span.blueline {
+	display: inline-block;
+	width: 3px;
+	height: 18px;
+	margin-right: 6px;
+	margin-top: -3px;
+	vertical-align: middle;
+	background: #004ea2;
+}
+
+.docBox ul {
+	text-align: center;
+}
+
+.docBox ul li {
+	width: 260px;
+	padding: 40px 0 25px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	transition: All .4s ease-in-out;
+	-webkit-transition: All .4s ease-in-out;
+	-moz-transition: All .4s ease-in-out;
+	-o-transition: All .4s ease-in-out;
+	-webkit-box-shadow: 1px 1px 10px #e8ecf7;
+	box-shadow: 1px 1px 10px #e8ecf7;
+	background: #f1f3f6;
+}
+
+.docBox ul li:last-child {
+	margin-right: 0px;
+}
+
+.docBox ul li:hover {
+	cursor: pointer;
+	border: 1px solid #004ea2;
+	transform: translate(0, -10px);
+	-webkit-transform: translate(0, -10px);
+	-moz-transform: translate(0, -10px);
+	-o-transform: translate(0, -10px);
+	-ms-transform: translate(0, -10px);
+}
+
+.imgLogo {
+	width: 80px;
+	height: 75px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.typeName {
+	font-size: 18px;
+	margin: 18px;
+	color: #20273c;
+	margin-bottom: 22px;
+}
+
+.typeText {
+	line-height: 23px;
+	margin-bottom: 18px;
+	color: #8c909f;
+}
+
+.location_wrapper{
+	font-size:12px;
+}
+.location_wrapper a:hover{
+	color:#004ea2;
+	text-decoration:underline;
+	font-weight:bold;
+}
+/*demo下载*/
+.headWrap ul li{
+	background:#fff;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+.headWrap ul li a{
+	color:#20273c;
+}
+.headWrap ul li em{
+	display:inline-block;
+	width:21px;
+	height:20px;
+	vertical-align:middle;
+	background: url(../img/dc_img/zip.png) no-repeat;
+	margin-right:10px;
+}
+.headWrap ul li a i{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	background: url(../img/dc_img/dowloadIcon.png) no-repeat;
+	margin-left:20px;
+}
+.headWrap ul li a:hover {
+	font-size: 14px;
+}
+.headWrap ul li a {
+	text-align:left;
+	display:inline;
+}
+.headWrap ul li{
+	width:320px;
+	margin:0px 14px 0px 50px;
+}
+.secondMethodBox p.linkp,.secondMethodBox tr td span.linkSpan{
+	word-wrap:break-word; 
+	word-break:break-all;
+}
+.secondMethodBox tr td span.linkSpan{
+	color:#333;
+}
+.container{
+	overflow:visible;
+}
+.dc_left {
+	overflow-y:auto;
+}
+/****底部******/
+ html,body{height:100%}
+.wrap{min-height:100%}
+@media (min-width: 1600px) {
+	.newfooter {margin-top:-90px;}
+}
+
+/* 适配移动端 */
+@media (max-width: 980px){
+	.documentCenter {
+		margin: 0 auto;
+		overflow: hidden;
+		width: 90%;
+	}
+	.top_list h3 {
+	    text-align: center;
+	    border-right: 1px solid #c6cad2;
+	    border-left: 1px solid #FFF;
+	    font-weight: 700;
+	    font-size: 20px;
+	}
+	.docBox h2.mainH2 {
+	    color: #0f1830;
+	    font-size: 24px;
+	    font-weight: 700;
+	    margin-bottom: 40px;
+	}
+	.typeName {
+	    font-size: 22px;
+	    margin: 18px;
+	    color: #20273c;
+	    margin-bottom: 22px;
+	}
+	.dc_right {
+	    width:65%;
+	    font-size: 23px;
+	    overflow: hidden;
+	}
+	.headWrap h2 {
+	    border-bottom: 1px solid #004ea2;
+	    font-size: 26px;
+	}
+	.dc_right p {
+	    color: #333333;
+	    font-size: 22px;
+	    line-height: 40px;
+	}
+	.secondWrap h2 {
+	    border-bottom: 1px solid #999999;
+	    font-size: 24px;
+	}
+	.secondMethodBox p {
+		font-size: 14px;
+	}
+	.secondMethod h4 {
+	    font-size: 22px;
+	    color: #333333;
+	    font-family: "微软雅黑";
+	    height: 34px;
+	    line-height: 34px;
+	}
+	.location_wrapper {
+	    font-size: 22px;
+	}
+	.dc_left h2 a {
+	    display: inline-block;
+	    width: 240px;
+	    height: 62px;
+	    line-height: 59px;
+	    border-top: 2px solid #ffffff;
+	    font-size: 24px;
+	    color: #675f5f;
+	    background: #f7f7f7;
+	    padding-left: 8px;
+	}
+	#sms .morelist ,#voice .morelist ,#fms .morelist{
+	    display: inline-block;
+	    width: 240px;
+	    height: 34px;
+	    line-height: 34px;
+	    padding-left: 24px;
+	    font-family: "宋体";
+	    font-size: 22px;
+	}
+	.dc_left ul li a {
+	    display: inline-block;
+	    width: 240px;
+	    height: 34px;
+	    line-height: 34px;
+	    background: #f7f7f7;
+	    padding-left: 18px;
+	    font-family: "宋体";
+	    font-size: 20px;
+	}
+	.hotline .titL{
+		font-size: 24px;
+	}
+	.urlbox {
+		width: 100%;
+	}
+	.secondMethodBox ul {
+		padding-left: 5px;
+	}
+	.headWrap ul li {
+		float: none;
+		height: 90px;
+	}
+} 

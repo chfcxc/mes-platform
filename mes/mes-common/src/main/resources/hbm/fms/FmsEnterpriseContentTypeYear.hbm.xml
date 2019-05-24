@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsEnterpriseContentTypeYear" table="fms_enterprise_content_type_year">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="businessTypeId" column="business_type_id" type="long" />
+		<property name="enterpriseId" column="enterprise_id" type="long" />
+		<property name="totalNumber" column="total_number" type="int" />
+		<property name="cmccNumber" column="cmcc_number" type="int" />
+		<property name="cuccNumber" column="cucc_number" type="int" />
+		<property name="ctccNumber" column="ctcc_number" type="int" />
+		<property name="unknowNumber" column="unknow_number" type="int" />
+		<property name="successNumber" column="success_number" type="int" />
+		<property name="cmccSuccessNumber" column="cmcc_success_number" type="int" />
+		<property name="cuccSuccessNumber" column="cucc_success_number" type="int" />
+		<property name="ctccSuccessNumber" column="ctcc_success_number" type="int" />
+		<property name="failNumber" column="fail_number" type="int" />
+		<property name="cmccFailNumber" column="cmcc_fail_number" type="int" />
+		<property name="cuccFailNumber" column="cucc_fail_number" type="int" />
+		<property name="ctccFailNumber" column="ctcc_fail_number" type="int" />
+		<property name="timeoutNumber" column="timeout_number" type="int" />
+		<property name="cmccTimeoutNumber" column="cmcc_timeout_number" type="int" />
+		<property name="cuccTimeoutNumber" column="cucc_timeout_number" type="int" />
+		<property name="ctccTimeoutNumber" column="ctcc_timeout_number" type="int" />
+		<property name="reportTime" column="report_time" type="timestamp" />
+		<property name="createTime" column="create_time" type="timestamp" />
+	</class>
+</hibernate-mapping>

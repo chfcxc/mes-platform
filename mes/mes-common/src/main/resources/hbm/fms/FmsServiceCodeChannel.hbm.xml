@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsServiceCodeChannel" table="fms_service_code_channel">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="serviceCodeId" column="service_code_id" type="long" />
+		<property name="appId" column="app_id" type="string" />
+		<property name="channelId" column="channel_id" type="int" />
+		<property name="createTime" column="create_time" type="timestamp" />
+		<property name="operatorCode" column="operator_code" type="string" />
+		<property name="templateType" column="template_type" type="int" />
+	</class>
+</hibernate-mapping>

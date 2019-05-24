@@ -1,0 +1,26 @@
+#oldcontent{
+	width:400px;
+}
+textarea {
+    height: 150px;
+    margin-left: 10px;
+    outline: medium none;
+    resize: none;
+    width: 530px;
+}
+.item .item-label{
+	width:100px;
+}
+#addForm select{
+	width:210px;
+	margin-left:10px;
+}
+.hh130{
+	height:180px;
+}
+.item label.error, .item label.valid, .item label.tip{
+	left:102px;
+}
+#descProblem-error,#reply-error{
+	top:160px;
+}

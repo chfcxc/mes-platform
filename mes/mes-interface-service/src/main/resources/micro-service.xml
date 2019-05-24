@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<micro-service>
+
+	<component>
+		<name>Redis</name>
+		<type>cn.emay.mis.component.client.redis.RedisComponent</type>
+		<info>
+			<type>single</type><!-- single,cluster -->
+			<timeout>5000</timeout>
+			<maxIdle>8</maxIdle>
+			<maxTotal>16</maxTotal>
+			<minIdle>4</minIdle>
+			<maxWaitMillis>2000</maxWaitMillis>
+			<datePattern>yyyy-MM-dd HH:mm:ss SSS</datePattern>
+			<!-- single -->
+			<host>127.0.0.1</host>
+			<port>6379</port>
+		</info>
+	</component>
+	
+	<component>
+		<name>HttpServer</name>
+		<type>cn.emay.mis.component.server.http.SimpleHttpServerComponent</type>
+		<info>
+			<port>8999</port>
+			<!-- https配置可以选填，文件放在classpath路径，只需配置文件名 
+			<https>
+				<storePath>keystore2015.jks</storePath>
+				<password>EMAY@#SDK99920150304</password>
+			</https>
+			-->
+			<maxThreadNumber>5000</maxThreadNumber>
+			<charset>UTF-8</charset>
+			<mappings>
+				<mapping url="/inter/getBalance" class="cn.emay.eucp.inter.http.servlet.GetBalanceServlet" method="service"/>
+				<mapping url="/inter/getFMSReport" class="cn.emay.eucp.inter.http.servlet.GetReportServlet" method="service"/>
+				<mapping url="/inter/querytemplate" class="cn.emay.eucp.inter.http.servlet.GetTemplateStatusServlet" method="service"/>
+				<mapping url="/inter/sendBatchFMS" class="cn.emay.eucp.inter.http.servlet.SendBatchFmsServlet" method="service"/>
+				<mapping url="/inter/sendSingleFMS" class="cn.emay.eucp.inter.http.servlet.SendSingleFmsServlet" method="service"/>
+				<mapping url="/inter/templateReport" class="cn.emay.eucp.inter.http.servlet.TemplateReportServlet" method="service"/>
+				
+				<mapping url="/secure/getBalance" class="cn.emay.eucp.inter.http.servlet.aes.AESGetBalanceServlet" method="service"/>
+				<mapping url="/secure/getFMSReport" class="cn.emay.eucp.inter.http.servlet.aes.AESGetReportServlet" method="service"/>
+				<mapping url="/secure/querytemplate" class="cn.emay.eucp.inter.http.servlet.aes.AESGetTemplateStatusServlet" method="service"/>
+				<mapping url="/secure/sendBatchFMS" class="cn.emay.eucp.inter.http.servlet.aes.AESSendBatchFmsServlet" method="service"/>
+				<mapping url="/secure/sendSingleFMS" class="cn.emay.eucp.inter.http.servlet.aes.AESSendSingleFmsServlet" method="service"/>
+				<mapping url="/secure/templateReport" class="cn.emay.eucp.inter.http.servlet.aes.AESTemplateReportServlet" method="service"/>
+				
+			</mappings>
+		</info>
+	</component>
+	
+	<component>
+		<name>InterfaceInit</name>
+		<type>cn.emay.eucp.inter.InterfaceInitComponent</type>
+	</component>
+
+
+</micro-service>

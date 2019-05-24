@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.EnterpriseBindingSaleTop" table="system_enterprise_binding_sale_top">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="systemEnterpriseBindingSaleId" column="system_enterprise_binding_sale_id" type="long" />
+		<property name="top" column="top" type="long" />
+		<property name="createTime" column="create_time" type="timestamp" />
+		<property name="createMan" column="create_man" type="string" />
+		<property name="lastUpdateMan" column="last_update_man" type="string" />
+	</class>
+</hibernate-mapping>

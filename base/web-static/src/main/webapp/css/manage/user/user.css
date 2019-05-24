@@ -1,0 +1,52 @@
+	#UserForm,#modifyUserForm{width:1010px;margin:0 auto;position:relative;}
+	.form_box .item .item-label{width:100px;}
+	.simSelect-title{cursor:pointer;}
+	.simSelect-title input{margin:0;border-radius:2px;}
+	.simSelect-title span{width:15px;height:26px;border:#707070 1px solid; margin-top: 1px;
+	 background: -webkit-linear-gradient(top , #ffffff, #d2d2d2);
+	 background: -moz-linear-gradient(center top , #ffffff, #d2d2d2);
+	 background: -ms-linear-gradient(top , #ffffff, #d2d2d2);
+	 float:left;border-radius:0 2px 2px 0;margin-left:-18px;}
+	.simSelect-title span:hover{border:#3c7fb1 1px solid; 
+	background: -webkit-linear-gradient(top , #fafdfe, #a7d9f5);
+	background: -moz-linear-gradient(center top , #fafdfe, #a7d9f5);
+	background: -ms-linear-gradient(top , #fafdfe, #a7d9f5);}
+	.simSelect-title i{ 
+	width:0; 
+    height:0; 
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #464444;
+    position:relative;
+    top:10px;
+    left:3px;
+    }
+	.simSelect-cen{position:absolute; right: 267px;
+    top: 29px;width:209px;  border:#ccc 1px solid; height:220px; background:#fff; display:none; overflow:hidden; z-index: 99999999; }
+	.simSelect-text{ width:230px; height:180px; overflow:auto; }
+	.simSelect-foot{ text-align:center; }
+	.simSelect-foot .btn{ padding:5px 0;
+	 background: -moz-linear-gradient(center top , #0183e1, #629fe2);
+	 background: -webkit-linear-gradient(top , #0183e1, #629fe2);
+	 background: -ms-linear-gradient(top , #0183e1, #629fe2); 
+	 border: 1px solid #0183e1; border-radius: 5px; color: #fff; cursor: pointer; display: inline-block;
+	  height:30px;  margin: 0 10px; line-height:26px; text-align:center; padding:0 24px;}
+	.simSelect-text dl dd{ margin-left:25px;  }
+	.simSelect-text dl dd span{ cursor:pointer; line-height: 180%; display:block; width:160px; *width:100px; }
+	.simSelect-text dl dd i{ float:left; margin: 7px 3px 0; }
+	.simSelect {padding-left:10px;}
+	.red{color:red;}
+	.checkR{margin-left:10px;width:580px;height:auto; }
+    .checkR label{float:left;}
+    .jueselabel{display:block}
+	.tishi{position:absolute;width:268px; display:inline-block;margin-left:4px;}
+	#realname-error,#department-error,#email-error,#mobile-error{text-align:left; width:220px;}
+	#username-error{width:256px;}
+	#UserForm .item:first-child{margin-top:30px;}
+	#modifyUserForm{margin-top:30px;}
+	#modifyUserForm .tipFoot,#UserForm .tipFoot{margin-bottom:20px;}
+	.qux{height:auto;}
+ .treeI{cursor:pointer;}
+.checkItem{width:300px;}
+.checkItem input{margin:8px 10px 0px 10px;}
+	

@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+.layer{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:#000;
+	filter:alpha(opacity=65); 
+	-moz-opacity:0.65; 
+	opacity:0.65;
+	z-index:9999;
+}
+
+.tipBorder{
+	background-color:#fff;
+	border:#32323a 1px solid;
+	border-radius:5px;
+	min-width:200px;
+	min-height:100px;
+	position:absolute;
+	z-index:10001;
+}
+.tipTitle{
+	background:#e4e4e4;
+	padding:10px 26px 10px 20px;
+	color:#333;
+	font-size:16px;
+	text-align:left;
+	cursor:move;
+	min-height:20px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border:1px solid #e4e4e4;
+}
+.tipTitle span{
+	display:block;
+	margin-right:30px;
+}
+.tipicon{
+	font-style:normal;
+	cursor:pointer;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 3px;
+	background:url(../../img/client/tip-icon.png) no-repeat;
+}
+.tipicon-0{
+	width:30px;
+	height:32px;
+}
+.tipicon-1{
+	width:30px;
+	height:32px;
+	background-position:-30px 0;
+}
+.tipicon-2{
+	width:30px;
+	height:32px;
+	background-position:-60px 0;
+}
+.tipicon-3{
+	width:30px;
+	height:32px;
+	background-position:-90px 0;
+}
+.tipClose{
+	position:absolute;
+	background-position:0 -32px;
+	border-radius:20px;
+	right:-15px;
+	top:-15px;
+	width:20px;
+	height:20px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.tipTitle .tipClose{
+	right:10px;
+	top:12px;
+}
+
+.tipCen{
+	padding:10px 26px 10px 20px;
+	text-align:left;
+	overflow-y:auto;
+}
+
+.tipFoot{
+    padding: 10px;
+    text-align: center;
+}
+.tipFoot button{
+	border:none;
+	border-radius:5px;
+	height:auto;
+	background: -moz-linear-gradient( top, #fea720, #fea720);
+	background: -ms-linear-gradient( top, #fea720, #fea720);
+	background: -o-linear-gradient( top, #fea720, #fea720);
+	background: -webkit-linear-gradient( top, #fea720, #fea720);
+	color:#fff;
+	padding:5px 24px;
+	margin:0 10px;
+	cursor:pointer;
+	display:inline-block;
+	transition:background 0.5s;
+	border:1px solid #fea720;
+}
+.tipFoot button:hover{
+	color:#ffffff;
+	background: -moz-linear-gradient( top, #fd9d07, #fd9d07);
+	background: -ms-linear-gradient( top, #fd9d07, #fd9d07);
+	background: -o-linear-gradient( top, #fd9d07, #fd9d07);
+	background: -webkit-linear-gradient( top, #fd9d07, #fd9d07);
+	border:1px solid #fd9d07;
+}
+
+.easyTipBorder{
+	background-color:#fff;
+	box-shadow:0 0 4px #ccc;
+	border-radius:5px;
+	min-width:100px;
+	max-width:400px;
+	min-height:50px;
+	position:fixed;
+	z-index:10001;
+}
+.tipLog{
+	min-width:100px;
+	background-color:#fff;
+	box-shadow:0 0 4px #ccc;
+	border-radius:5px;
+	display:inline-block;
+	position:fixed;
+	z-index:10001;
+}

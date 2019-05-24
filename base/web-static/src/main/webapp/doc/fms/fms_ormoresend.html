@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>亿美软通</title>
+        <link type="image/x-icon" rel="shortcut icon" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="bookmark" href="../img/favicon.ico">
+	    <link type="image/x-icon" rel="icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/documentCenter.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="topbar">
+			<div class="topcon">
+				<div class="logo">   <a href="http://www.emay.cn/"></a> </div>
+				<div class="top_list">
+					<div class="listDiv">
+						<h3 class="bor_L"><a href="http://www.emay.cn/" target="_blank">官网首页</a></h3>
+					</div>
+	                <div class="listDiv">
+						<h3><a href="http://www.emay.cn/article283.html" target="_blank">立即申请</a></h3>
+					</div>
+					<div class="listDiv">
+						<h3><a href="http://mtn.b2m.cn:8080/static/doc/index.html" target="_blank">文档中心</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="dc_banner"><img src="../img/dc_img/dc_banner.png"/></div>
+        <!--文档中心-->
+        <div class="container">
+        	<div class="documentCenter">
+        		<div id="smsLeft"></div>
+                <div class="dc_left fl">
+               		<div class='location_wrapper'>
+               			<img src="../img/dc_img/location.png">当前位置：<a href="../index.html">文档中心</a> > 闪推
+               		</div>							
+                    <h2 class="active"><a href="./fms_safeContentReport.html"><span></span>闪推接口</a></h2>
+                    <ul style="display:block" id="fms">
+                    	<li>
+                        	<a class="morelist" href="./fms_safeContentReport.html">安全接口</a>
+                            <ul>
+                                <li><a href="./fms_safeContentReport.html">内容模板报备接口</a></li>
+                                <li><a href="./fms_safetemplateSearch.html">模板查询接口</a></li>
+                                <li><a href="./fms_safesinglesend.html">单条发送接口</a></li>
+                                <li><a href="./fms_safemoresend.html">群发接口</a></li>
+                                <li><a href="./fms_safegetpresentation.html">获取状态报告接口</a></li>
+                                <li><a href="./fms_safegetbalance.html">获取余额接口</a></li>
+                            </ul>            
+                        </li>
+                        
+                        <li>
+                        	<a class="morelist twoactive" href="./fms_orContentReport.html">普通接口</a>
+                            <ul class="moreUl" style="display:block">
+                                <li><a href="./fms_orContentReport.html">内容模板报备接口</a></li>
+                                <li><a href="./fms_ortemplateSearch.html">模板查询接口</a></li>
+                                <li><a href="./fms_orsinglesend.html">单条发送接口</a></li>
+                                <li><a class="threeactive" href="./fms_ormoresend.html">群发接口</a></li>
+                                <li><a href="./fms_orgetpresentation.html">获取状态报告接口</a></li>
+                                <li><a href="./fms_orgetbalance.html">获取余额接口</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                    <h2><a href="./fms_statuscode.html"><span></span>状态码</a></h2>
+                    <div class="hotline">
+                        <h4 class="titL">7x24小时客服热线 ></h4>
+                        <div class="ym_phone">
+                            <div><img src="../img/phoneC_08.png" alt="" />售前：<span>400-810-7255</span></div>
+                            <div><img src="../img/phoneC_08.png" alt="" />售后：<span>400-779-7255</span></div>
+                        </div>
+                    </div>
+               </div>
+               <div class="dc_right fr">
+               		<div class="headWrap">
+                    	<h2>普通接口</h2>
+                        <div class="headcontent">
+                            <p>普通接口提供基础的发送方式，数据以明文传输，并不能保障数据安全，如果有安全性需求，请选用安全接口。</p>
+							<p>普通接口所有参数均通过post或get参数提交,注意：部分参数如内容需要进行URLENCODE转码保证数据能够正常传输。</p>
+							<p>字符集：普通接口传出数据仅支持UTF-8字符集编码；</p>
+                        </div>               
+                    </div> 
+                    <div class="headWrap">
+                    	<h2>群发接口</h2>
+                        <div class="headcontent">
+                        	<p>此接口为用户使用不同手机号发送不同内容提供支持。</p>
+                        </div>               
+                    </div> 
+                    <div class="secondWrap">
+                    	<h2>请求</h2>
+                       <!-- <div class="secondcontent">
+                        	<p>此接口为客户发送单条短信提供支持。</p>
+                        </div>  -->          
+                    </div> 
+                    <div class="secondMethod">
+                        <h4>链接</h4>
+                        <div class="secondMethodBox">
+                       		<p>http://ip:port/inter/sendBatchFMS</p>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>参数</h4>
+                        <div class="secondMethodBox">
+                       		<table  border="0" cellspacing="0" cellpadding="0">
+                            	<thead>
+                                	<tr>
+                                		<th width="110">参数</th>
+                                        <th width="110">类型</th>
+                                        <th width="600">描述</th>
+                                	</tr>
+                                </thead>
+                            	<tbody>
+                                	<tr>
+                                    	<td>appId</td>
+                                        <td>String</td>
+                                        <td>用户Appid(必填)</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>mobile</td>
+                                        <td>String</td>
+                                        <td>手机号(必填)<br/>多条，最多300个</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>templateId</td>
+                                        <td>String</td>
+                                        <td>模板ID</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>content</td>
+                                        <td>String</td>
+                                        <td>闪推模板变量内容.固定内容模板此处为空.个性时{code:xxx,name:xxx}</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>customFmsId</td>
+                                        <td>String</td>
+                                        <td>自定义消息ID(选填)<br/>最长32位<br/>多条，与手机号一一对应</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>requestTime</td>
+                                        <td>long</td>
+                                        <td>请求时间(必填)<br/> 格式：时间毫秒数<br/>安全验证字段，防止同一个请求重复提交；<br/>闪推平台根据requestTime与requestValidPeriod共同判断请求是否有效，针对无效的请求，闪推平台响应错误；<br/>判断方法：请求时间 + 请求有效时间> 当前时间 ? 有效 : 无效；</td>
+                                    </tr>
+                                     <tr>
+                                    	<td>requestValidPeriod</td>
+                                        <td>int</td>
+                                        <td>请求有效时间(必填)[单位:秒]<br/>描述同上</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <div class="secondMethod">
+                        <h4>示例</h4>
+                        <div class="secondMethodBox">
+                       		<p>1、将参数拼装成json串</p>
+                            <ul>
+                				<li>
+<pre>
+{
+	"appId":"EUCP-EMY-TEST-XXXX",
+	"requestTime":1490588340964,
+	"requestValidPeriod":30,
+	"templateId":"7883922",
+	"fmses":[
+		{
+		"mobile":"159xxxxxxxx",
+		"customFmsId":"2018010709302911",
+			"content": {
+				"name":"小明",
+				"age":"10"
+			}
+		},{
+			"mobile":"137xxxxxxxx",
+			"customFmsId":"2018010709302912",
+			"content": {
+				"name":"小红",
+				"age":"10"
+			}
+		}
+	]
+}
+
+</pre>	
+                    			</li>
+                			</ul>
+                                                       <p>2、将json串转化为UTF-8编码的byte数组</p>
+                            <ul>
+                				<li>
+<pre>
+Byte[] data = json.toBytes[“UTF-8”];
+</pre>	
+                    			</li>
+                			</ul>
+                            <p>3、通过http post方法传输</p>
+                            <ul>
+                				<li>
+<pre>
+Byte[] response = http.post(url,data);
+</pre>	
+                    			</li>
+                			</ul>
+                			<p>详见闪推接口demo</p>
+                        </div>
+                    </div>
+                    <div class="secondWrap">
+                    	<h2>响应</h2>  
+                    	<p>响应数据格式为Json</p>      
+                    </div>
+                    <div class="secondMethod">
+                        <h4>参数</h4>
+                        <div class="secondMethodBox">
+                       		<table  border="0" cellspacing="0" cellpadding="0">
+                            	<thead>
+                                	<tr>
+                                		<th width="110">参数</th>
+                                        <th width="80">类型</th>
+                                        <th width="300">传输方式</th>
+                                        <th width="330">描述</th>
+                                	</tr>
+                                </thead>
+                            	<tbody>
+                                	<tr>
+                                    	<td>result</td>
+                                        <td>String</td>
+                                        <td>http头信息传输</td>
+                                        <td>请求状态码，详见本文档《接口状态码表》<br/><span>当result不是SUCCESS时，不会响应下面参数数据。</span></td>
+                                    </tr>
+                                    <tr>
+                                    	<td>mobile</td>
+                                        <td>String</td>
+                                        <td></td>
+                                        <td>手机号多个</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>fmsId</td>
+                                        <td>String</td>
+                                        <td></td>
+                                        <td>消息ID多个，与mobile一对一</td>
+                                    </tr>
+                                    <tr>
+                                    	<td>customFmsId</td>
+                                        <td>String</td>
+                                        <td></td>
+                                        <td>客户自定义FMSID多个，与mobile一对一</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="secondMethod">
+                        <h4>示例</h4>
+                        <div class="secondMethodBox">
+                       		<p>1、从http头信息获取请求状态，如果code不是SUCCESS，不用进行下面几步</p>
+                            <ul>
+                				<li>
+<pre>
+String code = http.getHead("reasult");
+</pre>	
+                    			</li>
+                			</ul>
+                            <p>2、从响应流获取响应数据</p>
+                            <ul>
+                				<li>
+<pre>
+Byte[] data = Response.getdata();
+</pre>	
+                    			</li>
+                			</ul>
+                            <p>3、将数据转换成JSON串</p>
+                            <ul>
+                				<li>
+<pre>
+String json = new String(data,"UTF-8");
+[
+	{
+	"mobile":"159xxxxxxxx",
+	"fmsId":"2018010709302911",
+	"customFmsId":"2018010709302911"
+	},
+	{
+	"mobile":"137xxxxxxxx",
+	"fmsId":"2018010709302912",
+	"customFmsId":"2018010709302912"
+	}
+]
+</pre>	
+                    			</li>
+                			</ul>
+                        </div>
+                    </div>
+                       	
+               </div>
+            </div>
+        </div>
+        <div class="widget" id="widget"> <a href="javascript:void(0);">TOP</a> </div>
+        <!--footer-->
+		<div class="footer">
+             <p class="footerp">北京亿美软通科技有限公司 <span>京ICP备05069632号-1</span><img src="../img/mary_11.png" alt="" /><span>京公网安备11010502031242号</span></p>
+		</div>
+		
+ <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" src="../js/jquery.liMarquee.js"></script>
+ <script type="text/javascript" src="../js/scroll.js"></script>
+ <script type="text/javascript" src="../js/index.js"></script> 
+ <script type="text/javascript" src="../js/documentcenter.js"></script>
+	
+		<style>
+.hoverS{
+	background:#0557bd !important;
+}
+.hoverS a{
+	color:#fff !important;
+}
+</style>
+<script type="text/javascript">
+   $(document).ready(function(){
+    var $liT=$('.tit_list li');
+		$liT.hover(function(){
+		 $(this).addClass('hoverS');
+		},function(){
+		 $(this).removeClass('hoverS');
+		});
+    $('.tit_list2 li a,.tit_list1 li a').hover(function(){
+     $(this).addClass('contentC');
+     $(this).siblings('em').addClass('contentbg');
+    },function(){
+     $(this).removeClass('contentC');
+     $(this).siblings('em').removeClass('contentbg');
+    });
+    
+    /*友情链接区*/
+    $(".fri_link").liMarquee({direction:'up'});
+   });
+  </script> <script type="text/javascript">
+   var shareUrl = "";
+   var shareTitle = "分享标题";
+   shareUrl="http://"+window.location.host;
+   function weixin(url){
+ 
+    var shareUrl1=shareUrl+url;
+    window.open("http://www.jiathis.com/send/?webid=weixin&url=" + shareUrl1 + "&title=" + shareTitle);
+    
+    }
+    
+    function tqq(url){
+
+    var shareUrl2=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tqq&url=" + shareUrl2 + "&title=" + shareTitle);
+     
+    }
+    
+    function qzone(url){
+ 
+    var shareUrl3=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=qzone&url=" + shareUrl3 + "&title=" + shareTitle);
+     
+    }
+    
+    function tsina(url){
+  
+    var shareUrl4=shareUrl+url;
+     window.open("http://www.jiathis.com/send/?webid=tsina&url=" + shareUrl4 + "&title=" + shareTitle);
+     
+    }
+    
+   
+  </script>
+  <script type="text/javascript" src="../js/Live800.js"></script>
+ 
+</body>
+</html> 
+       

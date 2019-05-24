@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.User" table="system_user">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="username" column="username" type="string" />
+		<property name="password" column="password" type="string" />
+		<property name="realname" column="realname" type="string" />
+		<property name="mobile" column="mobile" type="string" />
+		<property name="email" column="email" type="string" />
+		<property name="userType" column="user_type" type="string" />
+		<property name="createTime" column="create_time" type="timestamp" />
+		<property name="state" column="state" type="int" />
+		<property name="remark" column="remark" type="string" />
+		<property name="operatorId" column="operator_id" type="long" />
+		<property name="lastChangePasswordTime" column="last_change_password_time" type="timestamp" />
+	</class>
+</hibernate-mapping>
+
+

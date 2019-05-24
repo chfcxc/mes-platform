@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.Department" table="system_enterprise_department">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="parentDepartmentId" column="parent_department_id" type="long" />
+		<property name="departmentCode" column="department_code" type="string" />
+		<property name="departmentName" column="department_name" type="string" />
+		<property name="enterpriseId" column="enterprise_id" type="long" />
+		<property name="remark" column="remark" type="string" />
+		<property name="fullPath" column="full_path" type="string" />
+		<property name="isDelete" column="is_delete" type="boolean" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,61 @@
+.wrapBox {
+	background: #ffffff none repeat scroll 0 0;
+	margin-bottom: 10px;
+	width: 100%;
+	margin:0 auto;
+}
+
+.wrapBox h2 {
+	border-bottom: 1px solid #e4e4e4;
+	/* color: #8c8c8c; */
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	text-indent: 2em;
+	width: 100%;
+}
+#footer{
+	/*±‹√‚footer±ª∏≤∏«*/
+	position:fixed;
+	bottom:10px;
+}
+/*±‹√‚footer±ª∏≤∏«*/
+
+.contentBox{
+	width:96%;
+	margin:0 auto;
+}
+.topBox,.bottomBox{
+	width:100%;
+	font-size:14px;
+}
+
+.bottomBox{
+	margin:15px 0;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #ccc;
+    border-bottom: 5px solid transparent;
+    width:10px;
+}
+.questionText{
+	width:90%;
+	word-wrap:break-word;
+}
+.pusTime {
+	width:8%;
+}
+.replayText{
+	padding-left:20px;
+	width:90%;
+	word-wrap:break-word;
+}
+.dashDiv{
+	width:100%;
+	border-bottom:1px dashed #ccc;
+	margin-bottom:15px;
+	
+}

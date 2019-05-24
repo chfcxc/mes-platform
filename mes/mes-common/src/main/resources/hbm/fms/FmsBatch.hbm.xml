@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.fms.FmsBatch" table="fms_batch">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="title" column="title" type="string" />
+		<property name="batchNumber" column="batch_number" type="string" />
+		<property name="templateId" column="template_id" type="string" />
+		<property name="content" column="content" type="string" />
+		<property name="templateType" column="template_type" type="int" />
+		<property name="appId" column="app_id" type="string" />
+		<property name="submitTime" column="submit_time" type="timestamp" />
+		<property name="state" column="state" type="int" />
+		<property name="cmccNumber" column="cmcc_number" type="int" />
+		<property name="cuccNumber" column="cucc_number" type="int" />
+		<property name="ctccNumber" column="ctcc_number" type="int" />
+		<property name="sendTotal" column="send_total" type="int" />
+		<property name="successTotal" column="success_total" type="int" />
+		<property name="errorTextNumber" column="error_text_number" type="int" />
+		<property name="repeatTotal" column="repeat_total" type="int" />
+		<property name="unknownTotal" column="unknown_total" type="int" />
+		<property name="userId" column="user_id" type="long" />		
+		<property name="serviceCodeId" column="service_code_id" type="long" />
+		<property name="contentTypeId" column="content_type_id" type="long" />
+	</class>
+</hibernate-mapping>

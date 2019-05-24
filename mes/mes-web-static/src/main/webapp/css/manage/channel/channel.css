@@ -1,0 +1,676 @@
+/*鏂板*/
+.channel_basic {
+	padding: 5px 0px 5px 20px;
+	color: #5f5e5e;
+	font-size: 14px;
+}
+
+.channel_basicNew {
+	padding: 5px 0px 5px 20px;
+	color: #5f5e5e;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px dashed #999999;
+	width: 1010px;
+	margin: 0 auto 12px;
+}
+
+.item .item-label {
+	width: 88px;
+}
+
+.item .item-label-w96 {
+	width: 96px;
+}
+
+.item select {
+	width: 212px;
+}
+
+.item .fs11 {
+	font-size: 11px;
+	width: 104px;
+	margin-left: -16px;
+}
+
+.item .fs12 {
+	font-size: 12px;
+}
+
+.item .fs13 {
+	font-size: 13px;
+}
+
+#sign_type_cmpp, #sign_type_cmpp, #sign_type_cmpp {
+	width: 80px;
+}
+
+#add_field_box {
+	width: 300px;
+	height: 400px;
+}
+
+#sign_cmpp {
+	display: none;
+}
+
+#sign_type {
+	width: 88px;
+}
+
+.fielsBox {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.fielsBtn {
+	cursor: pointer;
+	position: relative;
+}
+
+.addBox {
+	position: absolute;
+	background: #fff none repeat scroll 0 0;
+	display: block;
+	padding-top: 25px;
+	top: 0px;
+	z-index: 111;
+	width: 400px;
+	height: 280px;
+	left: 0;
+	border: 1px solid #d0d0d0;
+}
+
+.fielsBtn a {
+	background: #e4e4e4;
+	border-radius: 5px;
+	color: #0000ff;
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 10px;
+	padding: 4px 6px;
+}
+
+.tipBtnNew:hover {
+	background: #e4e4e4;
+	color: #0000ff;
+}
+
+.fielsBtn .item .item-label {
+	width: auto;
+}
+
+#addBox {
+	display: none;
+}
+.cmcuct {
+	display:block;
+	font-size: 14px;
+	padding-left:50px;
+}
+/*閫氶亾璋冮厤*/
+#turn_box {
+	margin-left: 6px;
+	background: #f2f9fd;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+	font-size: 16px;
+}
+
+#turnForm label.nums {
+	padding-left: 32px;
+	text-align: right;
+}
+
+#tel_numlList li {
+	float: left;
+	width: 172px;
+	margin-left: 10px;
+}
+
+.tel_nums, .turn_nums, .target_channel {
+	height: 35px;
+	line-height: 35px;
+	margin: 15px 0;
+}
+
+.turn_nums .item .item-label {
+	width: auto;
+}
+
+.turn_nums .item {
+	height: 35px;
+	margin: 0;
+}
+
+.turn_nums .item-text {
+	width: 160px;
+}
+
+.selList {
+	width: 172px;
+	margin-left: 10px;
+}
+
+.item label.error, .item label.valid, .item label.tip {
+	left: 98px;
+}
+
+.target_channel {
+	margin-bottom: 0;
+}
+/*閫氶亾璋冮厤*/
+#monitorallocateForm {
+	width: 80%;
+	margin: 20px auto;
+}
+
+#monitorallocateDiv {
+	border: 1px solid #def0fb;
+	border-radius: 5px;
+	margin: 10px auto;
+	width: 98%;
+}
+
+.monitorSel {
+	width: 120px;
+}
+
+#channel_cmccSel option, #serviceCode_cmccSel option {
+	width: 100px;
+}
+
+#serviceCodeTab {
+	display: none;
+}
+
+#provinceCode,#supplierId{
+	margin-left: 10px;
+}
+
+#thirdChannel .item input {
+	width: 140px;
+}
+
+.twosign {
+	width: 84px !important;
+}
+
+.mTop10 {
+	margin-top: 10px;
+}
+/*璇︽儏*/
+.cDetail input {
+	border: none;
+	box-shadow: none;
+}
+.cmcuct i {
+	width: 50px !important;
+	display: inline-block;
+	text-align: center;
+	font-style: normal
+}
+
+#signDiv {
+	display: none;
+}
+
+.item-text {
+	width: 140px;
+}
+
+.item .item-label {
+	width: 130px !important;
+}
+
+.item select {
+	width: 152px;
+}
+
+.item label.error, .item label.valid, .item label.tip {
+	left: 132px;
+}
+
+.cDetail .item label, .item-label .span-label {
+	width: 138px !important;
+}
+
+#pleaseSelect {
+	background: -moz-linear-gradient(top, #0183e1, #629fe2) repeat scroll 0
+		0;
+	background: -webkit-linear-gradient(top, #0183e1, #629fe2) repeat scroll
+		0 0;
+	background: -ms-linear-gradient(top, #0183e1, #629fe2) repeat scroll 0 0;
+	border: 1px solid #0183e1 !important;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 4x 14px;
+	color: #fff !important;
+	transition: background 0.5s ease 0s;
+}
+
+#servicecodebox {
+	width: 440px;
+	max-height: 400px;
+}
+
+.sbox input {
+	margin-right: 10px;
+}
+
+.codebox {
+	margin: 10px 0;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+}
+
+.codebox li {
+	width: 100px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+}
+
+.codebox li:hover, .codebox .active {
+	background: #0183e1;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.cmcucti {
+	
+}
+
+.spanmut {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.remave, .imgs {
+	display: inline-block;
+	height: 15px;
+	margin-left: 6px;
+	margin-top: 8px;
+	width: 15px;
+}
+
+.remave {
+	background: rgba(0, 0, 0, 0) url("../../../img/manage/remave.png") no-repeat
+		scroll 0 0;
+	background-size: 15px 15px;
+}
+
+.remave:hover {
+	cursor: pointer;
+}
+
+/*閫氶亾閰嶇疆--*/
+.item {
+	min-height: 40px;
+	line-height: 28px;
+	margin: 0 10px;
+}
+
+.item label.error, .item label.valid, .item label.tip {
+	top: 24px !important;
+}
+
+input, select, textarea, input[type="text"], input[type="password"],
+	input[type="datetime"], input[type="datetime-local"], input[type="date"],
+	input[type="month"], input[type="time"], input[type="week"], input[type="number"],
+	input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
+	input[type="color"], .uneditable-input {
+	height: 28px;
+}
+
+.item-select {
+	height: 30px;
+}
+
+#operatorCode {
+	padding-left: 15px;
+/* 	display: block; */
+	margin-top: -6px;
+}
+
+#protocolAttr {
+	position: relative;
+}
+
+.fielsBtn {
+	position: absolute;
+	top: 4px;
+	right: 10px;
+}
+
+.item .width120 {
+	width: 114px;
+}
+
+.pl35 {
+	padding-left: 15px;
+}
+
+.item  .item-labelWidth {
+	width: 116px;
+}
+
+.pl17 {
+	padding-left: 17px;
+}
+
+.senior-send {
+	width: 1010px;
+	margin: 0 auto;
+}
+/* .senior-send .item input,.senior-sendcheck .item input{width:132px;} */
+#sendServideAddrBox {
+	display: none;
+}
+
+.senior-sendcheck {
+	width: 1030px;
+}
+
+label.error {
+	background: rgba(0, 0, 0, 0) url("../../../img/error.png") no-repeat
+		scroll left center/10px 10px;
+	padding-left: 12px;
+	font-size: 12px;
+}
+/*20161215*/
+#tempForm {
+	margin: 10px auto;
+	width: 98%;
+}
+
+.content-box-conmmon {
+	padding: 0;
+	border: 1px solid #def0fb;
+	border-radius: 5px;
+	margin: 10px auto;
+	width: 98%;
+}
+
+.item {
+	min-width: 340px;
+}
+
+.senior-send {
+	min-width: 1116px;
+}
+
+#thirdChannel .item {
+	min-width: 344px
+}
+
+#seqNumberBox {
+	display: none;
+}
+
+.cmcuct label, #operatorCode label, .pl35 label {
+	font-size: 14px;
+}
+
+.div-style {
+	text-align: center;
+}
+
+.div-style-p10 {
+	width: 60px;
+	text-align: left;
+	padding-left: 36px;
+}
+
+.disBlock {
+	display: block;
+}
+
+#monitorDiv:hover, #monitorVoiceDiv:hover {
+	border: 1px solid #cbcbcb !important;
+}
+
+#isStarShow {
+	display: none;
+}
+/*update by hyr 20170706 15:40*/
+#getWay {
+	display: block;
+	min-height: 40px;
+	line-height: 50px;
+}
+
+#voiceDefault {
+	height: 111px;
+}
+
+#getWay, .urlBox, .listenAddressBox {
+	display: inline-block;
+	height: 50px;
+	position: relative;
+	vertical-align: middle;
+	line-height: 28px;
+	margin: 0 10px;
+	min-height: 40px;
+}
+
+.radioItem {
+	width: 76px;
+	display: inline-block;
+}
+
+.urlBox, .listenAddressBox {
+	margin-left: -12px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.listenAddressBox {
+	display: none;
+}
+
+.width100 {
+	min-width: 100%;
+}
+
+.disno {
+	display: none;
+}
+/*涓婅鍦板潃绛夊搴�*/
+input[name='sendUrl'] {
+	width: 400px;
+}
+
+.receiveTypeBox {
+	min-width: 260px;
+}
+
+.urlBox {
+	margin-left: -25px;
+}
+
+.urlBox .item .item-label {
+	width: 98px;
+}
+
+.receiveTypeBox {
+	margin-top: 10px;
+}
+
+.listenAddressBox {
+	margin-left: 44px;
+}
+
+input[name='MoUrl'], input[name='reportUrl'] {
+	width: 400px;
+}
+
+#thirdChannel .item label, #thirdChannel .item-label .span-label {
+	width: auto !important;
+	min-width: 130px;
+}
+
+#thirdChannel .item .item-label span.propertyName {
+	display: inline-block;
+}
+/*鍒犻櫎閫氶亾*/
+textarea#reason {
+	width: 400px;
+	height: 60px;
+	resize: none;
+}
+
+.delDiv {
+	height: 40px;
+	line-height: 40px;
+}
+/*绛惧悕瑙勫垯*/
+#signPosition {
+	width: 96px;
+	margin-right: 10px;
+}
+
+.delTip dt {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.greyLine {
+	width: 410px;
+	height: 1px;
+	border-bottom: 1px solid #ccc;
+	padding: 4px 0;
+}
+
+.deleReason {
+	display: block;
+	margin: 4px 0;
+}
+
+.delTip dd {
+	line-height: 24px;
+	word-break: brear-all;
+}
+/*绛惧悕瑙勫垯閰嶇疆*/
+.signWrap {
+	width: 100%;
+}
+
+.signWrap .sign-item-label {
+	font-size: 14px;
+	text-align: right;
+	width: 130px;
+	line-height: 28px;
+}
+
+.signWrap .sign-item {
+	min-width: auto;
+}
+
+.sign-config {
+	margin-left: 0px;
+}
+
+.signWrap .item .hadsign-itme-label {
+	margin-left: -64px;
+}
+/*璇︽儏鐗规畩澶勭悊*/
+#signWrap #signPosition {
+	width: 30px;
+}
+
+#signWrap .item .hadsign-itme-label {
+	margin-left: -72px;
+}
+
+.item .width514 {
+	width: 154px;
+}
+
+#isHideSign {
+	width: 128px;
+}
+
+.cDetail .item .width514 {
+	width: 158px !important;
+	margin-left: -19px;
+}
+#billingSubscriberNumber{
+	margin-right:5px; 
+	width:100px;
+}
+/*绗笁鏂瑰崗璁弬鏁伴厤缃姞涓嬪彂鍦板潃鍜岀姸鎬佹姤鍛婅幏鍙�*/
+.getWayThree input[name="MoUrl"],.getWayThree input[name="reportUrl"] {
+    width: 250px;
+}
+.cDetail .receiveTypeBoxThree label.radioItem {
+    width: 76px !important;
+}
+.urlBoxThree .item .item-label{
+	width:104px !important;
+}
+.pl42{
+	padding-left:42px;
+}
+#smsType-error{
+	left:64px;
+}
+#smsType{
+	font-size:14px;
+}
+.pl60{
+	padding-left:60px;
+}
+.texts{border:none !important}
+
+
+/* 通道成本 */
+.country{margin:20px;}
+.country label{display:inline-block;height:28px;line-height:28px;}
+.tipBtn {
+	margin-top:2px !important;
+    margin-left: 10px !important;
+    color: #ffffff !important;
+    background: -moz-linear-gradient( top, #0183e1, #629fe2) !important;
+    background: -ms-linear-gradient( top, #0183e1, #629fe2) !important;
+    background: -o-linear-gradient( top, #0183e1, #629fe2) !important;
+    background: -webkit-linear-gradient( top, #0183e1, #629fe2) !important;
+}
+.cardts {
+   /*  width: 350px; */
+    min-width: 260px;
+    padding-bottom: 10px;
+    background: #def0fb;
+    border-radius: 5px;
+    margin-left: 5px;
+    display:inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 0 0 10px 10px;
+}
+.cardts-item{
+	background: #cfeebf !important;
+}
+.cardts label{
+	width:150px;
+	display:inline-block;
+	/* text-align:right; */
+	
+}
+.wrong {
+    width: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    float: right;
+    border-top-right-radius: 5px;
+}
+.clear {
+    clear: both;
+}

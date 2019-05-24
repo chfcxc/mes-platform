@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.emay.eucp.common.moudle.db.system.EnterpriseAuth" table="system_enterprise_auth">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="authCode" column="auth_code" type="string" />
+		<property name="parentAuthCode" column="parent_auth_code" type="string" />
+		<property name="authType" column="auth_type" type="string" />
+		<property name="authLevel" column="auth_level" type="int" />
+		<property name="forService" column="for_service" type="string" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+#oldcontent{
+	width:400px;
+}
+#versionSearch{
+	width:140px;
+}
+#pubTime{
+	width:200px;
+}
+.textareas {
+    height: 150px;
+    margin-left: 10px;
+    outline: medium none;
+    resize: none;
+    width: 530px;
+}
+.item .item-label{
+	width:100px;
+}
+#addForm select{
+	width:210px;
+	height:30px;
+	line-height:30px;
+	margin-left:10px;
+}
+.hh130{
+	height:180px;
+}
+.item label.error, .item label.valid, .item label.tip{
+	left:102px;
+}
+#updateInfo-error{
+	top:160px;
+}
+.textsize{width:100%;border:none;resize:none;}

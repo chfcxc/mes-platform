@@ -1,0 +1,360 @@
+#seeNoBlingsDetails table tr:hover, #seeAllBlingsDetails table tr:hover
+	{
+	cursor: pointer;
+}
+
+.bindTrBg {
+	background: #ccc;
+}
+
+.onGreen {
+	background: #459DF5;
+	color: #fff;
+}
+
+.ofh ul li:hover {
+	cursor: pointer;
+}
+
+.ofh ul li {
+	text-align: left;
+	padding: 4px;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+
+/*账户绑定 修改*/
+#updateRolebox {
+	width: 92%;
+	margin-left:4%;
+}
+
+#updateRolebox .item {
+	display: block;
+}
+
+.greyLine {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #f2f2f2;
+	margin-top: 10px;
+}
+
+.light_grey_bg {
+	background: #f2f2f2;
+	color: #333;
+}
+
+.role-add {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	margin: 10px auto;
+}
+
+.role-add:hover {
+	cursor: pointer;
+}
+
+.yellow_add {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/yellow_add.png")
+		no-repeat 0 center;
+	width: 25px;
+	height: 25px;
+	background-size: 25px 25px;
+}
+
+.role_box {
+	display: none;
+}
+
+.serviceCode_bind {
+	color: #007aff;
+	font-size: 14px;
+	margin-left: 6px;
+}
+
+.role-cen {
+	width: 100%;
+	border: 1px solid #f2f2f2;
+}
+/*原来*/
+.authority {
+	margin-top: 20px;
+}
+
+.role-title {
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.role-title i {
+	float: right;
+	margin-right: 10px;
+	*margin-top: -30px;
+	display: inline;
+	width: 0px;
+	height: 0px;
+	border: transparent 10px solid;
+	border-bottom-color: #feb94d;
+}
+
+.role-on i {
+	margin-top: 11px;
+	*margin-top: -19px;
+	border: transparent 10px solid;
+	border-top-color: #feb94d;
+}
+
+.roleAdd {
+	background: #fff;
+	margin: 2px 0;
+	padding: 5px;
+}
+
+.roleNav label {
+	font-weight: bold;
+}
+
+.roleNav {
+	padding: 6px 6px 0px;
+}
+
+.roleNavFind {
+	padding: 6px 6px 0px 20px;
+	display: inline-block;
+	border: 1px solid #f2f2f2;
+}
+
+.roleNavFind-cen {
+	padding-left: 30px;
+}
+
+.roleNavFind, .roleNavFind-cen {
+	clear: both;
+	overflow: hidden;
+}
+
+.roleNavFind label {
+	margin: 5px 10px 5px 0;
+	color: #333333;
+}
+
+.role_auth {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.role {
+	border: #e6e6e6 1px solid;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.role-title {
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.role-title i {
+	float: right;
+	margin-right: 10px;
+	*margin-top: -30px;
+	display: inline;
+	width: 0px;
+	height: 0px;
+	border: transparent 10px solid;
+	border-bottom-color: #feb94d;
+}
+
+.role-on i {
+	margin-top: 11px;
+	*margin-top: -19px;
+	border: transparent 10px solid;
+	border-top-color: #feb94d;
+}
+
+.roleAdd {
+	background: #fff;
+	margin: 2px 0;
+	padding: 0px 10px 20px 10px;
+}
+
+.roleNav label {
+	font-weight: bold;
+}
+
+.roleNav {
+	padding: 6px 6px 0px;
+}
+
+.roleNavFind {
+	padding: 6px 8px;
+	display: inline-block;
+	margin: 20px 10px 10px 10px;
+	position: relative;
+}
+
+.roleNavFind-cen {
+	padding-left: 30px;
+}
+
+.roleNavFind, .roleNavFind-cen {
+	clear: both;
+	overflow: hidden;
+}
+
+.deleDiv {
+	position: absolute;
+	top: 6px;
+	right: 2px;
+	background: rgba(0, 0, 0, 0) url("../../../img/client/grey-close.png")
+		no-repeat 0 center;
+	width: 14px;
+	height: 14px;
+	background-size: 14px 14px;
+	cursor: pointer;
+}
+/*绑定特服号*/
+.choci-box {
+	width: 150px;
+	float: left;
+	margin-left: 30px;
+}
+
+.choice-top {
+	width: 150px;
+	height: 32px;
+}
+
+.choice-left {
+	width: 180px;
+	height: 220px;
+	display: block;
+	margin-top: 10px;
+	overflow: auto;
+	border: #ccc 1px solid;
+}
+
+.choice-right {
+	width: 160px;
+	float: right;
+	height: 220px;
+	overflow: auto;
+	border: #ccc 1px solid;
+	margin-right: 30px;
+	margin-top: 42px;
+}
+
+.choice-sclctedxin input {
+	width: 145px;
+	padding-right: 36px;
+	height: 30px;
+}
+
+.searchBoxImglxr {
+	position: absolute;
+	top: 55px;
+	left: 206px;
+	width: 32px;
+	height: 31px;
+	background: url(../../../img/client/nav-icon.png) no-repeat 0px -440px;
+	z-index: 999;
+}
+
+.searchBoxImglxr:hover {
+	cursor: pointer;
+}
+
+.choice-title {
+	background: #e4e4e4;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.choice-center {
+	float: left;
+	width: 22px;
+	margin-top: 108px;
+	margin-left: 8px;
+}
+
+.choice-center span {
+	display: block;
+	margin: 10px 0;
+}
+
+.choice-center span a {
+	color: #4b6b8b;
+	text-decoration: none;
+}
+
+.tem_down {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/bindLeft.png")
+		no-repeat;
+	display: block;
+	height: 22px;
+	width: 22px;
+}
+
+.tem_up {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/bindRight.png")
+		no-repeat;
+	display: block;
+	height: 22px;
+	width: 22px;
+}
+
+.check_rolebox {
+	margin-top: 10px;
+}
+
+#seeNoBlingsDetails {
+	height: 190px;
+}
+.ofh ul li.alignCenter{
+	text-align:center;
+}
+/* 绑定平台 */
+.role_box{
+	display:block;
+}
+.yellow_tip {
+	background: rgba(0, 0, 0, 0) url("../../../img/client/yellow_tip.png") no-repeat center center;
+}
+
+.role-add-tip:hover {
+   cursor:auto;
+}
+.nodata{
+	display:inline-block;
+	padding-top:20px;
+	width:100%;
+	text-align:center;
+}
+.width99{
+	width:99.8%;
+}
+.tipFootMt30{
+	margin-top:30px;
+}
+#platFormCodeBox{
+	margin-bottom:30px;
+}
+#platFormCodeBox .roleAdd{
+	max-height: 500px;
+    min-height: 30px;
+    overflow-y: scroll;
+}
+ 
